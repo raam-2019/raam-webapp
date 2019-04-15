@@ -9,9 +9,13 @@ class App extends Component {
     return (
       //Fan experience page. This is the first page that will load. For Dashboard access for now 
       //we will have to add /dashboardRAAMforVIPaccess to out http
+
+      //Removing the extact will show both the fan page and dash page together
+      //which we might need later to avoid multiple same implementations.
+      //For development purpose I have added the exact.
       <BrowserRouter>
         <div>
-          <Route path="/" component={Fanexperience} />
+          <Route path="/" component={Fanexperience} exact />
           <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
         </div>
       </BrowserRouter>

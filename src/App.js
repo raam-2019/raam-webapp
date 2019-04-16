@@ -3,6 +3,7 @@ import { Route, Link, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Components/Dashboard/dashboard';
 import Fanexperience from './Components/FanExperience/fanexperience';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 
 class App extends Component {
   render() {

@@ -1,0 +1,79 @@
+html {
+    font-family: KaTeX_Main; 
+    font-size: 21px;
+    line-height: 1.58;
+    color: #333;  
+    overscroll-behavior-y: auto;
+    overflow: auto;
+  }
+#header {
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    color: #777;
+    margin-bottom: 30px;
+    padding-top: 50px;
+  }
+  #header-bar {
+    color: #333;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    z-index: 10;
+    opacity: 0.99;
+  }
+  #header-bar-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #header-bar-wrap span {
+    line-height: 50px;
+    letter-spacing: -3px;
+    font-weight: bold;
+    font-family: KaTeX_Main; 
+    font-size: 30px;
+    display: block;
+  }
+  @media (max-width: 1000px) {
+    .main-menu, .main-contact { display: none; }
+    
+  }
+  
+  
+  .main-sub {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  
+  .main-sub:hover {
+    background: whitesmoke;
+  }
+  .main-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 5px;
+  }
+  .main-selected {font-weight: bold;}
+  .main-sub-option {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 14px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .main-menu > div {
+    display: inline-block;
+    margin-right: 5px;
+  }

@@ -3,6 +3,8 @@ import { Route, Link, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Components/Dashboard/dashboard';
 import Fanexperience from './Components/FanExperience/fanexperience';
+import { Provider } from "react-redux"; // Redux Provider
+import store from "./store";
 
 class App extends Component {
   render() {
@@ -13,12 +15,14 @@ class App extends Component {
       //Removing the extact will show both the fan page and dash page together
       //which we might need later to avoid multiple same implementations.
       //For development purpose I have added the exact.
-      <BrowserRouter>
-        <div>
-          <Route path="/" component={Fanexperience} exact />
-          <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
-        </div>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div>
+            <Route path="/" component={Fanexperience} exact />
+            <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
+          </div>
+        </BrowserRouter>
+      </Provider>
 
 
     );

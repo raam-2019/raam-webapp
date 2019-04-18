@@ -1,4 +1,4 @@
 {
-    "AppSyncApiName": "raamapp",
+    "AppSyncApiName": "raamapi",
     "DynamoDBBillingMode": "PAY_PER_REQUEST"
 }

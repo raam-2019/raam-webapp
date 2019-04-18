@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Link, BrowserRouter } from 'react-router-dom';
-import './App.css';
+import { Route, Link, BrowserRouter, Switch } from 'react-router-dom';
+
 import Dashboard from './Components/Dashboard/dashboard';
 import Fanexperience from './Components/FanExperience/fanexperience';
 
@@ -20,10 +20,10 @@ class App extends Component {
       //For development purpose I have added the exact.
       <Provider store={store}>
         <BrowserRouter>
-          <div>
+          <Switch>
             <Route path="/" component={Fanexperience} exact />
             <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
-          </div>
+          </Switch>
         </BrowserRouter>
       </Provider>
 

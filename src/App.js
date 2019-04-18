@@ -3,8 +3,11 @@ import { Route, Link, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Components/Dashboard/dashboard';
 import Fanexperience from './Components/FanExperience/fanexperience';
+
 import { Provider } from "react-redux"; // Redux Provider
 import store from "./store";
+
+// import 'mapbox-gl/dist/mapbox-gl.css';
 
 class App extends Component {
   render() {

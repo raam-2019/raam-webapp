@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Link, BrowserRouter, Switch } from 'react-router-dom';
-
-import Dashboard from './Components/Dashboard/dashboard';
-import Fanexperience from './Components/FanExperience/fanexperience';
-
+import DashboardPage from "./pages/DashboardPage";
+import FanPage from "./pages/FanPage";
+import ErrorPage from "./pages/ErrorPage";
 import { Provider } from "react-redux"; // Redux Provider
 import store from "./store";
+import "./css/stylesheet.css";
 
 // import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -21,13 +21,12 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route path="/" component={Fanexperience} exact />
-            <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
+            <Route path="/" component={FanPage} exact />
+            <Route path="/dashboardRAAMforVIPaccess" component={DashboardPage} exact/>
+            <Route component={ErrorPage} />
           </Switch>
         </BrowserRouter>
       </Provider>
-
-
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MapBoxComp from "../Components/MapBox Components/MapBox";
 import Navagation from "../Components/Navagation";
-import "../css/fanexperience.css";
 
 class FanPage extends Component {
     render() { 

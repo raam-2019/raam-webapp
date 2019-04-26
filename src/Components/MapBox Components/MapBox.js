@@ -49,7 +49,7 @@ class Fanexperience extends Component {
     render() {
         return (
             <div id="MapboxWrapper">
-                <Container className="d-flex flex-wrap justify-content-left align-items-center align-content-center">
+                <div className="d-flex flex-wrap justify-content-left align-items-center align-content-center">
                     <ReactMapGL mapboxApiAccessToken={TOKEN}
                         mapStyle="mapbox://styles/mislam5/cjuiyejbm6qn11gnv0e44i7qm"
                         {...this.state.viewport} onViewportChange={this._onViewportChange}
@@ -59,7 +59,7 @@ class Fanexperience extends Component {
                         </div>
                     </ReactMapGL>
                     <button onClick={this._goToCyclist}>Cyclist</button>
-                </Container>
+                </div>
             </div>
         );
     }

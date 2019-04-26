@@ -1,5 +1,5 @@
 projects:
-  raamapi:
+  raamapp:
     schemaPath: src\graphql\schema.json
     includes:
       - src\graphql\**\*.js
@@ -10,7 +10,7 @@ projects:
         codeGenTarget: javascript
         generatedFileName: ''
         docsFilePath: src\graphql
-        graphQLApiId: j6m37bvh3fhufhgkv6uznbk3la
+        graphQLApiId: 5ulftpzhfzbwvhays44xyeiam4
       endpoints:
         prod: >-
-          https://qjzmeunxhjdblfh2doccqiuwhy.appsync-api.us-east-1.amazonaws.com/graphql
+          https://nsfmwmeqnbcupebc4prdfgosee.appsync-api.us-east-1.amazonaws.com/graphql

@@ -27,15 +27,12 @@ class Navagation extends Component {
           isOpen: !this.state.isOpen
         });
       }
-      TitleClick = e => {
-        window.location.assign(e.target.name);
-      }
     render() { 
         return (
             <div style={{marginBottom: "20px"}}>
             <Navbar color="dark" light expand="md">
               <NavbarBrand href="/" style={{float: "center"}}>
-                <div className="index-title" onClick={this.TitleClick} name="/">
+                <div className="index-title">
                     Placeholder Title
                 </div>
               </NavbarBrand>
@@ -43,7 +40,7 @@ class Navagation extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/FanData" style={{color: "whitesmoke"}}>Link 1</NavLink>
+                    <NavLink href="/" style={{color: "whitesmoke"}}>Link 1</NavLink>
                   </NavItem>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret style={{color: "whitesmoke"}}>

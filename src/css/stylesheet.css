@@ -101,7 +101,8 @@ a.underLine{
   .index-title {
     font-size: 28px;
     font-weight: bold;
-    text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
     color: whitesmoke;
   }
   
@@ -287,11 +288,12 @@ a.underLine{
     font-size: 30px;
     display: block;
   }
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     .main-menu, .main-contact { display: none; }
     
-  }
+  } */
 
+  
   .main-contact:hover {
     background: whitesmoke;
   }
@@ -315,4 +317,7 @@ a.underLine{
   }
   
   
-  
+
+
+
+ 

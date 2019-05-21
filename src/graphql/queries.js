@@ -1,7 +1,7 @@
 // eslint-disable
 // this is an auto generated file. This will be overwritten
 
-export const getTodo = `query GetTodo($id: ID!) {
+ export const getTodo = `query GetTodo($id: ID!) {
   getTodo(id: $id) {
     id
     name
@@ -9,7 +9,7 @@ export const getTodo = `query GetTodo($id: ID!) {
   }
 }
 `;
-export const listTodos = `query ListTodos(
+ export const listTodos = `query ListTodos(
   $filter: ModelTodoFilterInput
   $limit: Int
   $nextToken: String
@@ -24,3 +24,22 @@ export const listTodos = `query ListTodos(
   }
 }
 `;
+
+export const Racerdata = `query listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs {
+  listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs{
+    items{
+      id
+      cadence
+      temperature
+      timestamp
+      speed
+      enhanced_speed
+    }
+  }
+}
+`;
+
+
+
+
+

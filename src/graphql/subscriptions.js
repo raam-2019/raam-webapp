@@ -25,3 +25,10 @@ export const onDeleteTodo = `subscription OnDeleteTodo {
   }
 }
 `;
+export const onCreateRacer = `subscription onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv{
+  onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv(){
+
+  }
+}
+`;
+

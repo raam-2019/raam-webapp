@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 import { Route, Link, BrowserRouter } from 'react-router-dom';
-import './App.css';
-import Dashboard from './Components/Dashboard/dashboard';
-import Fanexperience from './Components/FanExperience/fanexperience';
+import DashboardPage from "./pages/DashboardPage";
+import FanPage from "./pages/FanPage";
+import FanDataPage from "./pages/FanDataPage";
+import ErrorPage from "./pages/ErrorPage";
+import { Provider } from "react-redux"; // Redux Provider
+import store from "./store";
+import "./css/stylesheet.css";
 import {API, graphqlOperation} from 'aws-amplify';
-
-const listTodos = `query listTodos {
-  listTodos{
-    items{
-      id
-      name
-      description
-    }
-  }
-}`
+import {Racerdata} from "./graphql/queries";
 
 const addTodo = `mutation createTodo($name:String! $description: String!) {
   createTodo(input:{
@@ -40,21 +35,75 @@ class App extends Component {
     alert(JSON.stringify(newEvent));
   }
 
+  // listQuery = async () => {
+  //   console.log('listing todos');
+  //   const allTodos = await API.graphql(graphqlOperation(listTodos));
+  //   alert(JSON.stringify(allTodos));
+  // }
+
   listQuery = async () => {
     console.log('listing todos');
-    const allTodos = await API.graphql(graphqlOperation(listTodos));
+    const allTodos = await API.graphql(graphqlOperation(Racerdata));
     alert(JSON.stringify(allTodos));
   }
 
-  state = {users: [] }
+  state = {users: [], error: ""}
+  
   async componentDidMount(){
-    const allTodos = await API.graphql(graphqlOperation(listTodos));
+    const allTodos = await API.graphql(graphqlOperation(Racerdata));
     this.setState({
-      users: allTodos.data.listTodos.items
+      users: allTodos.data.listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs.items
     })
+
+  //  await fetch("https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/FEED_ID_HERE/message.json")
+  //   .then(res => res.json())
+  //   .then(
+  //     (result) => {
+  //       console.log(result);
+  //     },
+  //     // Note: it's important to handle errors here
+  //     // instead of a catch() block so that we don't swallow
+  //     // exceptions from actual bugs in components.
+  //     (error) => {
+  //     console.log(error);
+      
+  //     }
+  //   )
 
   }
 
+  //this a temporary render method just to query data from database.
+  render() {
+    return (
+      <div className="App">
+          <input id="name" placeholder="Name"/>
+          <input id="description" placeholder="Description"/>
+        <button onClick={this.listQuery}>GraphQL Query</button>
+        <button onClick={this.todoMutation}>GraphQL Mutation</button>
+        <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Cadence</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              {
+             this.state.users.map((user,index)=>(  
+              <tbody>
+               <tr key={index}>
+                <td>{user.id}</td>
+                <td>{user.cadence}</td>
+                <td>{user.timestamp}</td>
+             </tr>
+            </tbody>         
+          ))
+        }
+      </table>
+    
+      </div>
+    );
+  }
 
   // render() {
   //   return (
@@ -64,54 +113,19 @@ class App extends Component {
   //     //Removing the extact will show both the fan page and dash page together
   //     //which we might need later to avoid multiple same implementations.
   //     //For development purpose I have added the exact.
-  //     <BrowserRouter>
-  //       <div>
-  //         <Route path="/" component={Fanexperience} exact />
-  //         <Route path="/dashboardRAAMforVIPaccess" component={Dashboard} />
-  //       </div>
-  //     </BrowserRouter>
-
-
+  //     <Provider store={store}>
+  //       <BrowserRouter>
+  //         <Switch>
+  //           <Route path="/" component={FanPage} exact />
+  //           <Route path="/FanData" component={FanDataPage} exact />
+  //           <Route path="/dashboardRAAMforVIPaccess" component={DashboardPage} exact/>
+  //           <Route component={ErrorPage} />
+  //         </Switch>
+  //       </BrowserRouter>
+  //     </Provider>
   //   );
   // }
 
-
-  //this a temporary render method just to query data from database.
-  render() {
-    return (
-      <div className="App">
-          
-          <input id="name" placeholder="Name"/>
-          <input id="description" placeholder="Description"/>
-    
-        <button onClick={this.listQuery}>GraphQL Query</button>
-        <button onClick={this.todoMutation}>GraphQL Mutation</button>
-     
-        {
-          this.state.users.map((user,index)=>(
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-               <tr key={index}>
-                <td key={index}>{user.id}</td>
-                <td key={index}>{user.name}</td>
-                <td key={index}>{user.description}</td>
-             </tr>
-            </tbody>
-           </table>
-          ))
-
-        }
-     
-      </div>
-    );
-  }
 }
 
 export default App;

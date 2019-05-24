@@ -8,7 +8,7 @@ a.underLine{
   
   #body{
     height:100%;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
   }
   
   #quote{
@@ -21,7 +21,7 @@ a.underLine{
   }
   
   #footer{
-    position: absolute;
+    position: relative;
     text-align: right;
     right: 15px;
     bottom: 0;

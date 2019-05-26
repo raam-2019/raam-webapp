@@ -39,6 +39,16 @@ export const Racerdata = `query listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs {
 }
 `;
 
+export const asset = `query listAssetTableC60dd8as {
+  listAssetTableC60dd8as{
+    items{
+      id
+      ts
+    }
+  }
+}
+`;
+
 
 
 

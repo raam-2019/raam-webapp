@@ -9,6 +9,7 @@ export const onCreateTodo = `subscription OnCreateTodo {
   }
 }
 `;
+
 export const onUpdateTodo = `subscription OnUpdateTodo {
   onUpdateTodo {
     id
@@ -17,6 +18,7 @@ export const onUpdateTodo = `subscription OnUpdateTodo {
   }
 }
 `;
+
 export const onDeleteTodo = `subscription OnDeleteTodo {
   onDeleteTodo {
     id
@@ -25,10 +27,17 @@ export const onDeleteTodo = `subscription OnDeleteTodo {
   }
 }
 `;
-export const onCreateRacer = `subscription onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv{
-  onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv(){
 
+// export const onCreateRacer = `subscription onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv{
+//   onCreateRacerNj7uthp6pzfadg3eixfrzy5utmRaamenv(){
+
+//   }
+// }
+// `;
+
+export const onUpdateAsset = `subscription onUpdateAssetTableC60dd8a{
+  onUpdateAssetTableC60dd8a{
+    ts
   }
 }
 `;
-

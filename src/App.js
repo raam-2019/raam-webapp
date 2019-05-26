@@ -8,7 +8,8 @@ import { Provider } from "react-redux"; // Redux Provider
 import store from "./store";
 import "./css/stylesheet.css";
 import {API, graphqlOperation} from 'aws-amplify';
-import {Racerdata} from "./graphql/queries";
+import {Racerdata, asset} from "./graphql/queries";
+import {onUpdateAsset} from "./graphql/subscriptions";
 
 const addTodo = `mutation createTodo($name:String! $description: String!) {
   createTodo(input:{
@@ -20,7 +21,6 @@ const addTodo = `mutation createTodo($name:String! $description: String!) {
     description
   }
 }`
-
 
 class App extends Component {
 
@@ -47,14 +47,23 @@ class App extends Component {
     alert(JSON.stringify(allTodos));
   }
 
+  listAsset = async () => {
+    console.log('listing todos');
+    const allTodos = await API.graphql(graphqlOperation(onUpdateAsset));
+    // alert(JSON.stringify(allTodos));
+    console.log(allTodos);
+  }
+
   state = {users: [], error: ""}
   
   async componentDidMount(){
-    const allTodos = await API.graphql(graphqlOperation(Racerdata));
+    const allRacerData = await API.graphql(graphqlOperation(Racerdata));
+
     this.setState({
-      users: allTodos.data.listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs.items
+      users: allRacerData.data.listRacerNj7uthp6pzfadg3eixfrzy5utmRaamenvs.items
     })
 
+    // this.listAsset();
   //  await fetch("https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/FEED_ID_HERE/message.json")
   //   .then(res => res.json())
   //   .then(
@@ -95,7 +104,7 @@ class App extends Component {
                 <td>{user.id}</td>
                 <td>{user.cadence}</td>
                 <td>{user.timestamp}</td>
-             </tr>
+                </tr>
             </tbody>         
           ))
         }

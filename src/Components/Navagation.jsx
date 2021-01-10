@@ -43,7 +43,10 @@ class Navagation extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/FanData" style={{color: "whitesmoke"}}>Link 1</NavLink>
+                    <NavLink href="/FanData" style={{color: "whitesmoke"}}>Fan Data</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/Events" style={{color: "whitesmoke"}}>Events</NavLink>
                   </NavItem>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret style={{color: "whitesmoke"}}>

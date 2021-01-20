@@ -1,6 +1,5 @@
 Home
 - Mapbox broke in merge...fix that
-- Everything in navbar is bigger than pre-merge...restyle it
 - Get better athlete pictures
 - Fix mapbox watermark overlaying navbar
 - Improve progress bar

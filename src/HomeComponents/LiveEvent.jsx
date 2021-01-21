@@ -7,14 +7,11 @@ import MapBoxmain from "../HomeComponents/Mapboxmain";
 class LiveEvent extends Component {
   render() {
     return (
-      <div className="Live-Event">
-        <div className="Live-Event-Box">
-          <div className="row">
-            <div className="col">
-              <MapBoxmain />
-            </div>
-          </div>
+      <div className="Live-Event row">
+        <div className="col Live-Event-Map-Box">
+          <MapBoxmain />
         </div>
+        <div className="col Live-Event-Feed-Box">Live Feed</div>
       </div>
     );
   }

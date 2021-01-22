@@ -43,7 +43,7 @@ class AthleteGallery extends Component {
           <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Sandrine Fraissard"
-              event="TBD"
+              event="Race Around Rwanda"
               img={fraissard}
               link=""
             ></GalleryCard>

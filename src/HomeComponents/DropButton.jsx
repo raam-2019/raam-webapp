@@ -23,6 +23,7 @@ const DropButton = (props) => {
           {/* add property [disabled] when on that page */}
           <a href="/India">Dr. Amit Samarth</a>
         </DropdownItem>
+        <DropdownItem className="Dropdown-Item"><a href="/Rwanda">Sandrine Fraissard</a></DropdownItem>
         <DropdownItem className="Dropdown-Item">Dave Haase</DropdownItem>
         <DropdownItem className="Dropdown-Item">James MacDonald</DropdownItem>
         <DropdownItem className="Dropdown-Item">Bukima Patel</DropdownItem>

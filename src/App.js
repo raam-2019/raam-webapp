@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
 import { Provider } from "react-redux"; // Redux Provider
 import store from "./store";
+import Rwanda from "./pages/Rwanda"
 
 import "./css/stylesheet.css"; // import before Home page
 import Home from "./pages/Home";
@@ -20,6 +21,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/" component={Home} exact />
+            <Route path="/Rwanda" component={Rwanda} exact />
           </Switch>
         </BrowserRouter>
       </Provider>

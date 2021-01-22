@@ -1,21 +1,33 @@
 .Partners {
-  padding: 0px 80px;
-  padding-bottom: 40px;
+  width: 1200px;
+  margin: 0px 80px;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
 
   .Partners-Box {
     background: #ffffff;
-    box-shadow: 0px 4px 20px #29292926, 0px 4px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px #29292926, 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     overflow: hidden;
-    min-height: 512px;
+    height: 350px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
 
-    .Partners-Title {
-      //color: #ffffff;
+    .Partners-Logo {
+      height: 200px;
+      width: 100%;
+      object-fit: scale-down;
+      padding: 20px;
+    }
+
+    .Partners-Text {
       display: block;
-      font-size: 40px;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-      font-weight: 800;
+      font-size: 20px;
+      padding: 10px;
+      padding-top: 20px;
+      font-weight: 300;
     }
   }
 }

@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import GalleryCard from "../HomeComponents/GalleryCard";
 import "../css/Styles.css";
 
-import samarth from "../images/samarth.jpeg";
-import haase from "../images/haase.png";
-import macdonald from "../images/macdonald.PNG";
-import cross from "../images/cross.jpg";
-import fraissard from "../images/fraissard.PNG";
-import hering from "../images/hering.jpg";
+import samarth from "../images/athletes/samarth.jpeg";
+import haase from "../images/athletes/haase.png";
+import macdonald from "../images/athletes/macdonald.PNG";
+import cross from "../images/athletes/cross.jpg";
+import fraissard from "../images/athletes/fraissard.PNG";
+import hering from "../images/athletes/hering.jpg";
 
 class AthleteGallery extends Component {
   render() {

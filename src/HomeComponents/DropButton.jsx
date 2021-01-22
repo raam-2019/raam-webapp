@@ -21,7 +21,7 @@ const DropButton = (props) => {
       <DropdownMenu className="Dropdown-Menu" right>
         <DropdownItem className="Dropdown-Item">
           {/* add property [disabled] when on that page */}
-          Dr. Amit Samarth
+          <a href="/India">Dr. Amit Samarth</a>
         </DropdownItem>
         <DropdownItem className="Dropdown-Item">Dave Haase</DropdownItem>
         <DropdownItem className="Dropdown-Item">James MacDonald</DropdownItem>

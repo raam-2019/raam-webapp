@@ -9,7 +9,7 @@ class NavBar extends Component {
         <div className="row">
           {/* add col here for icon or something */}
           <div className="col">
-            <div className="Nav-Bar-Title">It's Your Move</div>
+            <div className="Nav-Bar-Title"><a href="/">It's Your Move</a></div>
           </div>
 
           <div className="Nav-Bar-Content">

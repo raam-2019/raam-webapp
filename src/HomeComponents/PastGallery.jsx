@@ -10,7 +10,7 @@ class PastGallery extends Component {
       <div className="Event-Gallery">
         <h2>Past Events</h2>
         <div className="row">
-          <div className="col-sm-4 Event-Gallery-Card-Container">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Dave Haase"
               event="Race Across America"

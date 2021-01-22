@@ -1,19 +1,29 @@
 import React, { Component } from "react";
-// import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
+import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
+import { Provider } from "react-redux"; // Redux Provider
+import store from "./store";
+
+import "./css/stylesheet.css"; // import before Home page
+import Home from "./pages/Home";
+
 // import DashboardPage from "./pages/DashboardPage";
 // import FanPage from "./pages/FanPage";
 // import FanDataPage from "./pages/FanDataPage";
 // import ErrorPage from "./pages/ErrorPage";
-// import { Provider } from "react-redux"; // Redux Provider
-// import store from "./store";
-import "./css/stylesheet.css";
-import Home from "./pages/Home";
 
 // import 'mapbox-gl/dist/mapbox-gl.css';
 
 class App extends Component {
   render() {
     return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Home} exact />
+          </Switch>
+        </BrowserRouter>
+      </Provider>
+
       //Fan experience page. This is the first page that will load. For Dashboard access for now
       //we will have to add /dashboardRAAMforVIPaccess to out http
 
@@ -30,10 +40,6 @@ class App extends Component {
       //     </Switch>
       //   </BrowserRouter>
       // </Provider>
-
-      <div className="App">
-        <Home />
-      </div>
     );
   }
 }

@@ -17,9 +17,11 @@ h1 {
   font-size: 72px;
   font-weight: 700;
   letter-spacing: -3px;
+  text-align: center;
 }
 
 h2 {
+  text-align: center;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -39,10 +41,6 @@ a {
 a:hover, a:active, a:focus {
   color: #da0001;
   text-decoration: none;
-}
-
-.App {
-  text-align: center;
 }
 
 .Nav-Bar {
@@ -138,7 +136,6 @@ a:hover, a:active, a:focus {
   margin-bottom: 30px;
   min-width: 283px;
   max-width: 375px;
-  align-self: center;
 }
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -150,9 +147,15 @@ a:hover, a:active, a:focus {
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:hover, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:active, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:focus {
   transform: scale(1.1);
 }
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info {
   padding: 25px 5px;
   background: #2d2d2c;
+  text-align: center;
 }
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Name {
   display: block;
@@ -166,11 +169,6 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-}
-.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Image {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
 }
 
 .Partners {

@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import GalleryCard from "../HomeComponents/GalleryCard";
 import "../css/Styles.css";
 
-import samarth from "../images/samarth.PNG";
+import samarth from "../images/samarth.jpeg";
 import haase from "../images/haase.png";
 import macdonald from "../images/macdonald.PNG";
 import cross from "../images/cross.jpg";
+import fraissard from "../images/fraissard.PNG";
+import hering from "../images/hering.jpg";
 
 class AthleteGallery extends Component {
   render() {
@@ -14,7 +16,7 @@ class AthleteGallery extends Component {
         <h2>Athletes</h2>
         {/* Row 1 */}
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Dr. Amit Samarth"
               event="Ride Around India"
@@ -22,7 +24,7 @@ class AthleteGallery extends Component {
               link="" // each card should have a link and image
             ></GalleryCard>
           </div>
-          <div className="col-sm-4">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Dave Haase"
               event="Bicycle Route 66"
@@ -30,7 +32,7 @@ class AthleteGallery extends Component {
               link=""
             ></GalleryCard>
           </div>
-          <div className="col-sm-4">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="James MacDonald"
               event="TBD"
@@ -38,13 +40,15 @@ class AthleteGallery extends Component {
               link=""
             ></GalleryCard>
           </div>
-        </div>
-        {/* Row 2 */}
-        <div className="row">
-          <div className="col-sm-4">
-            <GalleryCard name="Bukima Patel" event="TBD" link=""></GalleryCard>
+          <div className="col Event-Gallery-Card-Container">
+            <GalleryCard
+              name="Sandrine Fraissard"
+              event="TBD"
+              img={fraissard}
+              link=""
+            ></GalleryCard>
           </div>
-          <div className="col-sm-4">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Julia Cross"
               event="Canadian Challenge"
@@ -52,10 +56,11 @@ class AthleteGallery extends Component {
               link=""
             ></GalleryCard>
           </div>
-          <div className="col-sm-4">
+          <div className="col Event-Gallery-Card-Container">
             <GalleryCard
-              name="Christian Jensen"
+              name="____ Hering"
               event="TBD"
+              img={hering}
               link=""
             ></GalleryCard>
           </div>

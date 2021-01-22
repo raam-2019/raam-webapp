@@ -89,7 +89,7 @@ a:hover, a:active, a:focus {
   margin: auto;
   margin-top: 105px;
   display: flex;
-  flex-direction: col;
+  flex-direction: row;
   justify-content: center;
 }
 .Live-Event .Live-Event-Map-Box {
@@ -126,28 +126,40 @@ a:hover, a:active, a:focus {
 .Event-Gallery {
   padding: 0 80px;
   padding-bottom: 10px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: center;
 }
-.Event-Gallery .Event-Gallery-Card {
-  background: #ffffff;
+.Event-Gallery .Event-Gallery-Card-Container {
+  margin: auto;
+  margin-bottom: 30px;
+  min-width: 283px;
+  max-width: 375px;
+  align-self: center;
+}
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 30px;
+  width: 100%;
   transition: transform 400ms;
 }
-.Event-Gallery .Event-Gallery-Card:hover, .Event-Gallery .Event-Gallery-Card:active, .Event-Gallery .Event-Gallery-Card:focus {
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:hover, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:active, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:focus {
   transform: scale(1.1);
 }
-.Event-Gallery .Event-Gallery-Card .Event-Gallery-Card-Info {
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info {
   padding: 25px 5px;
   background: #2d2d2c;
 }
-.Event-Gallery .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Name {
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Name {
   display: block;
   font-size: 20px;
   margin-bottom: 5px;
 }
-.Event-Gallery .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Bio {
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Bio {
   display: block;
   color: #a7a7a7;
   font-size: 14px;
@@ -155,7 +167,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 1px;
   font-weight: 600;
 }
-.Event-Gallery .Event-Gallery-Card .Event-Gallery-Card-Image {
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Image {
   height: 200px;
   width: 100%;
   object-fit: cover;

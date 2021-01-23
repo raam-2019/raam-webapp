@@ -7,6 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import garmin from "../images/partners/garmin.png";
+import corelogo from "../images/partners/core.png";
+import healthio from "../images/partners/healthio.jpeg";
+import mapbox from "../images/partners/mapbox.png";
+import moxy from "../images/partners/moxy.png";
+import narrativeScience from "../images/partners/narrativescience.jpg";
 
 class Partners extends Component {
   render() {
@@ -32,10 +37,15 @@ class Partners extends Component {
               img={garmin}
               text="This is what we're using Garmin's tech for"
             />
-            <PartnerCard name="Slide2" img={""} text="words" />
-            <PartnerCard name="Slide3" img={""} text="words" />
-            <PartnerCard name="Slide4" img={""} text="words" />
-            <PartnerCard name="Slide5" img={""} text="words" />
+            <PartnerCard name="CORE" img={corelogo} text="words" />
+            <PartnerCard name="HealthIO" img={healthio} text="words" />
+            <PartnerCard name="Mapbox" img={mapbox} text="words" />
+            <PartnerCard name="Moxy" img={moxy} text="words" />
+            <PartnerCard
+              name="Narrative Science"
+              img={narrativeScience}
+              text="words"
+            />
           </Slider>
         </div>
       </div>

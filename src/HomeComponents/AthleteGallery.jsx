@@ -14,8 +14,15 @@ class AthleteGallery extends Component {
     return (
       <div className="Event-Gallery">
         <h2>Athletes</h2>
-        {/* Row 1 */}
         <div className="row">
+          <div className="col Event-Gallery-Card-Container">
+            <GalleryCard
+              name="Sandrine Fraissard"
+              event="Race Around Rwanda"
+              img={fraissard}
+              link=""
+            ></GalleryCard>
+          </div>
           <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Dr. Amit Samarth"
@@ -37,14 +44,6 @@ class AthleteGallery extends Component {
               name="James MacDonald"
               event="TBD"
               img={macdonald}
-              link=""
-            ></GalleryCard>
-          </div>
-          <div className="col Event-Gallery-Card-Container">
-            <GalleryCard
-              name="Sandrine Fraissard"
-              event="Race Around Rwanda"
-              img={fraissard}
               link=""
             ></GalleryCard>
           </div>

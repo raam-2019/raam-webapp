@@ -13,7 +13,7 @@ class Rwanda extends Component {
             <div>
             <NavBar />
             <h1 style={{paddingTop: "3.5rem"}}>Race Around Rwanda</h1>
-            <div className="iframe"><iframe src="https://share.garmin.com/DustinSchmidt" frameborder="0" marginwidth="0" marginheight="0" width="810" height="760"></iframe></div>
+            <div className="iframe"><iframe src="https://share.garmin.com/share/lespoulettesfrites" frameborder="0" marginwidth="0" marginheight="0" width="810" height="760"></iframe></div>
             <PledgeTracker />
             <p style={{textAlign: "center"}}>[Why pledge this athlete?]</p>
             <p style={{textAlign: "center"}}>[User interaction options]</p>

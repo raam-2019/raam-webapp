@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
 import { Provider } from "react-redux"; // Redux Provider
 import store from "./store";
-import India from "./pages/India"
-import Rwanda from "./pages/Rwanda"
 
-import "./css/stylesheet.css"; // import before Home page
+import "./css/stylesheet.css"; // import before pages or style gets funky
 import Home from "./pages/Home";
+import India from "./pages/India";
+import Rwanda from "./pages/Rwanda";
 
 // import DashboardPage from "./pages/DashboardPage";
 // import FanPage from "./pages/FanPage";

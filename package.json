@@ -1,5 +1,5 @@
 {
-  "name": "raam",
+  "name": "iym2021",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,12 +39,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raam-2019/raam-webapp.git"
+    "url": "git+https://github.com/IYM-2021/raam-webapp"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raam-2019/raam-webapp/issues"
-  },
-  "homepage": "https://github.com/raam-2019/raam-webapp#readme"
+    "url": "https://github.com/IYM-2021/raam-webapp/issues"
+  }
 }

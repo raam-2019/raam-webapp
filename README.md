@@ -1,5 +1,7 @@
 # itsyourmove
 
+![Production Build](https://github.com/IYM-2021/raam-webapp/workflows/Production%20Build/badge.svg)
+
 ## Project Setup
 1. Get yourself on a unix instance, either natively or if on windows through wsl2
 2. Clone the project

@@ -32,7 +32,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_S3_BUCKET: "itsyourmove2021.org"
           AWS_REGION: "us-west-2"
-          SOURCE_DIR: "public"
+          SOURCE_DIR: "build"
       - name: Invalidate Cache
         uses: awact/cloudfront-action@master
         env:

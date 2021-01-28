@@ -6,7 +6,7 @@ import MapBoxmain from "../HomeComponents/Mapboxmain";
 import {Container, Row, Col} from "reactstrap";
 import "../css/Styles.css";
 
-class Rwanda extends Component {
+class India extends Component {
     render() {
         return (
             <div>

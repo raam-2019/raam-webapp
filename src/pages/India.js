@@ -48,4 +48,4 @@ class Rwanda extends Component {
         )
     }
 }
-export default Rwanda;
+export default India;

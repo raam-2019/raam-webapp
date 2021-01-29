@@ -20,7 +20,7 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
-  margin-top: 100px;
+  margin-top: 112px;
 }
 
 h2 {
@@ -105,6 +105,10 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (max-width: 956px) {
+  h1 {
+    margin-top: 0px !important;
+  }
+
   .Nav-Bar {
     position: relative !important;
     z-index: 0 !important;
@@ -261,15 +265,16 @@ a:hover, a:active, a:focus {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 890px) {
-  .Partners-Box {
-    margin: 0 15px !important;
+@media only screen and (max-width: 1000px) {
+  .Partners .Partners-Box {
+    margin: 9px 50px;
   }
 }
 @media only screen and (max-width: 695px) {
   .Partners-Box {
     height: 200px !important;
     width: auto !important;
+    margin: 9px 20px !important;
   }
   .Partners-Box .Partners-Text {
     display: none !important;
@@ -279,6 +284,7 @@ a:hover, a:active, a:focus {
   .Partners-Box {
     height: 100px !important;
     width: auto !important;
+    margin: 9px 10px !important;
   }
   .Partners-Box .Partners-Logo {
     height: 100px !important;

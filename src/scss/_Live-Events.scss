@@ -55,3 +55,9 @@
     flex-grow: 0;
   }
 }
+
+@media only screen and (max-width: 520px) {
+  .Live-Event-Map-Box {
+    display: none !important;
+  }
+}

@@ -60,13 +60,18 @@
 }
 
 @media only screen and (max-width: 956px) {
-  .Nav-Bar-Title {
-    text-align: center !important;
-  }
-  .Nav-Bar-Content {
-    flex-flow: column wrap !important;
-    .Nav-Bar-Content-Item {
-      padding: 3px 0 !important;
+  .Nav-Bar {
+    position: relative !important;
+    z-index: 0 !important;
+
+    .Nav-Bar-Title {
+      text-align: center !important;
+    }
+    .Nav-Bar-Content {
+      flex-flow: column wrap !important;
+      .Nav-Bar-Content-Item {
+        padding: 3px 0 !important;
+      }
     }
   }
 }

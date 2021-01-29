@@ -20,7 +20,7 @@ class Partners extends Component {
         <div className="Partners">
           <h2>Partners</h2>
           <Slider
-            autoplay={false}
+            autoplay={true}
             autoplaySpeed={5000}
             dots={true}
             arrows={false}

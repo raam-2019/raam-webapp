@@ -1,24 +1,22 @@
 import React, { Component } from "react";
-import ProgressBar from "react-bootstrap/ProgressBar";
+import PledgeTrackerBar from "./PledgeTrackerComponent";
 
 import "../css/Styles.css";
 
-const pledges = 40;
+const pledges = 0;
 
 class PledgeTracker extends Component {
   render() {
     return (
       <div className="Pledge-Tracker">
-        <ProgressBar
-          className="Pledge-Tracker-Bar"
-          animated
-          now={pledges}
-          label={pledges}
-          variant="danger"
-        />
+        
+        <PledgeTrackerBar  pledges={pledges} />
+        <span className="Pledge-Tracker-Description">
+          {pledges} people have made the PLEDGE. Now it's your turn!
+          </span>
       </div>
     );
-  }
+   }
 }
 
 export default PledgeTracker;

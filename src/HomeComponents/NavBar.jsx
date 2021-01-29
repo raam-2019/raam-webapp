@@ -8,19 +8,17 @@ class NavBar extends Component {
       <div className="Nav-Bar">
         <div className="row">
           {/* add col here for icon or something */}
-          <div className="col">
-            <div className="Nav-Bar-Title">
-              <a href="/">It's Your Move</a>
-            </div>
+          <div className="col Nav-Bar-Title">
+            <a href="/">It's Your Move</a>
           </div>
 
-          <div className="Nav-Bar-Content">
+          <div className="col Nav-Bar-Content">
             <div className="Nav-Bar-Content-Item">
               <a className="Nav-Bar-Content-Link" href="/">
                 Home
               </a>
             </div>
-            <div className=" Nav-Bar-Content-Item">
+            <div className="Nav-Bar-Content-Item">
               <a
                 className="Nav-Bar-Content-Link"
                 href="https://www.google.com/" // filler link

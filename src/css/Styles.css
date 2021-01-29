@@ -71,17 +71,27 @@ a:hover, a:active, a:focus {
   font-weight: 500;
   text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
   padding-top: 3px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-min-content;
+  width: min-content;
 }
 .Nav-Bar .Nav-Bar-Title a:hover, .Nav-Bar .Nav-Bar-Title a:active, .Nav-Bar .Nav-Bar-Title a:focus {
   text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
 }
 .Nav-Bar .Nav-Bar-Content {
   text-align: right;
-  align-items: right;
   display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item {
   padding: 10px;
+  width: -webkit-min-content;
+  width: min-content;
   transition: transform 400ms;
 }
 .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:hover, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:active, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:focus {
@@ -94,6 +104,23 @@ a:hover, a:active, a:focus {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 956px) {
+  .Nav-Bar-Title {
+    text-align: center !important;
+  }
+
+  .Nav-Bar-Content {
+    flex-flow: column wrap !important;
+  }
+  .Nav-Bar-Content .Nav-Bar-Content-Item {
+    padding: 3px 0 !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Nav-Bar-Title {
+    margin-bottom: 10px !important;
+  }
+}
 .Live-Event {
   padding: 40px 80px;
   padding-bottom: 40px;
@@ -289,6 +316,9 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 
+.Dropdown {
+  margin: 9px 0;
+}
 .Dropdown .Dropdown-Toggle {
   margin-left: 10px;
   text-transform: uppercase;
@@ -299,6 +329,7 @@ a:hover, a:active, a:focus {
   border: none;
   height: -webkit-fit-content;
   height: fit-content;
+  max-width: 160px;
   padding-bottom: 7px;
   padding-top: 9px;
 }

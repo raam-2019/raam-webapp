@@ -1,4 +1,6 @@
 .Dropdown {
+  margin: 9px 0;
+
   .Dropdown-Toggle {
     margin-left: 10px;
     text-transform: uppercase;
@@ -8,6 +10,7 @@
     background: linear-gradient(135deg, #da0001, 50%, #f17e7e);
     border: none;
     height: fit-content;
+    max-width: 160px;
     padding-bottom: 7px;
     padding-top: 9px;
 
@@ -49,3 +52,7 @@
     }
   }
 }
+
+// For an attempt to align the drop menu to center when button does
+// @media only screen and (max-width: 956px) {
+// }

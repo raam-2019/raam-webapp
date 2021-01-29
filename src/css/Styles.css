@@ -16,8 +16,10 @@ h6 {
 h1 {
   font-size: 72px;
   font-weight: 500;
-  letter-spacing: -3px;
   text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
   margin-top: 100px;
 }
 
@@ -217,7 +219,7 @@ a:hover, a:active, a:focus {
   padding: 20px;
 }
 .Partners .Partners-Box .Partners-Text {
-  display: block;
+  color: #2d2d2c;
   font-size: 20px;
   padding: 10px;
   padding-top: 20px;
@@ -254,17 +256,17 @@ a:hover, a:active, a:focus {
   }
 }
 .Pledge-Tracker {
-  padding: 20px 80px;
-  padding-bottom: 100px;
+  padding: 0px 80px;
+  padding-bottom: 50px;
+  padding-top: 10px;
   text-align: center;
 }
 .Pledge-Tracker .Pledge-Tracker-Description {
-  text-align: center;
-    color: #000000;
-    letter-spacing: 1px;
-    font-weight: 800;
-    font-size: 35;
-    padding-top: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #2d2d2c;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .Footer {

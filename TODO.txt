@@ -2,6 +2,5 @@ Home
 - Mapbox broke in merge...fix that
 - Get better athlete pictures/partner logos
 - Fix mapbox watermark overlaying navbar
-- Improve progress bar
 - Git Life feed section hooked up
 - Finish partners section 

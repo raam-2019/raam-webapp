@@ -16,8 +16,10 @@ h6 {
 h1 {
   font-size: 72px;
   font-weight: 500;
-  letter-spacing: -3px;
   text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
   margin-top: 100px; // imperfect solution to navbar problem
 }
 

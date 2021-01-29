@@ -9,14 +9,14 @@ class PledgeTracker extends Component {
   render() {
     return (
       <div className="Pledge-Tracker">
-        
-        <PledgeTrackerBar  pledges={pledges} />
+        <h2>Pledges</h2>
+        <PledgeTrackerBar pledges={pledges} />
         <span className="Pledge-Tracker-Description">
           {pledges} people have made the PLEDGE. Now it's your turn!
-          </span>
+        </span>
       </div>
     );
-   }
+  }
 }
 
 export default PledgeTracker;

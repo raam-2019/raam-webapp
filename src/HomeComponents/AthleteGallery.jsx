@@ -28,7 +28,7 @@ class AthleteGallery extends Component {
               name="Dr. Amit Samarth"
               event="Ride Around India"
               img={samarth}
-              link="/India" // each card should have a link and image
+              link="/India"
             ></GalleryCard>
           </div>
           <div className="col Event-Gallery-Card-Container">
@@ -36,7 +36,7 @@ class AthleteGallery extends Component {
               name="Dave Haase"
               event="Bicycle Route 66"
               img={haase}
-              link=""
+              link="/Oops"
             ></GalleryCard>
           </div>
           <div className="col Event-Gallery-Card-Container">
@@ -44,7 +44,7 @@ class AthleteGallery extends Component {
               name="James MacDonald"
               event="TBD"
               img={macdonald}
-              link=""
+              link="/Oops"
             ></GalleryCard>
           </div>
           <div className="col Event-Gallery-Card-Container">
@@ -52,15 +52,15 @@ class AthleteGallery extends Component {
               name="Julia Cross"
               event="Canadian Challenge"
               img={cross}
-              link=""
+              link="/Oops"
             ></GalleryCard>
           </div>
           <div className="col Event-Gallery-Card-Container">
             <GalleryCard
-              name="____ Hering"
+              name="Jackie Hering"
               event="TBD"
               img={hering}
-              link=""
+              link="/Oops"
             ></GalleryCard>
           </div>
         </div>

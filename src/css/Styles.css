@@ -15,9 +15,10 @@ h6 {
 
 h1 {
   font-size: 72px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -3px;
   text-align: center;
+  margin-top: 100px;
 }
 
 h2 {
@@ -95,7 +96,7 @@ a:hover, a:active, a:focus {
   padding: 40px 80px;
   padding-bottom: 40px;
   margin: auto;
-  margin-top: 105px;
+  margin-top: -20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,7 +117,17 @@ a:hover, a:active, a:focus {
 }
 .Live-Event .Live-Event-Map-Box .Map {
   padding: 0;
-  width: 100%;
+  margin: 0;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.Live-Event .Live-Event-Map-Box .Garmin-Map {
+  padding: 0;
+  margin: 0;
+  width: 104%;
+  margin-left: -2%;
+  margin-bottom: -1.05%;
+  margin-top: 6px;
 }
 .Live-Event .Live-Event-Feed-Box {
   background: #ffffff;
@@ -213,6 +224,35 @@ a:hover, a:active, a:focus {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 890px) {
+  .Partners-Box {
+    margin: 0 15px !important;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .Partners-Box {
+    height: 200px !important;
+    width: auto !important;
+  }
+  .Partners-Box .Partners-Text {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .Partners-Box {
+    height: 100px !important;
+    width: auto !important;
+  }
+  .Partners-Box .Partners-Logo {
+    height: 100px !important;
+    padding: 10px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Partners {
+    display: none;
+  }
+}
 .Pledge-Tracker {
   padding: 20px 80px;
   padding-bottom: 45px;
@@ -279,8 +319,4 @@ a:hover, a:active, a:focus {
   text-decoration: none;
   color: #da0001;
   background-color: #f2f2f2;
-}
-
-.iframe {
-  text-align: center;
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../css/Styles.css";
 
 import NavBar from "../HomeComponents/NavBar";
+import PageHeader from "../HomeComponents/PageHeader";
 import LiveEvent from "../HomeComponents/LiveEvent.jsx";
 import PledgeTracker from "../HomeComponents/PledgeTracker";
 import AthleteGallery from "../HomeComponents/AthleteGallery";
@@ -17,6 +18,7 @@ class Home extends Component {
     return (
       <Parallax bgImage={background} strength={1000} blur={3}>
         <NavBar />
+        <PageHeader text="Welcome" />
         <LiveEvent />
         <PledgeTracker />
         <AthleteGallery />

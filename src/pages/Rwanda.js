@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import NavBar from "../HomeComponents/NavBar";
-import LiveEvent from "../HomeComponents/LiveEvent.jsx";
 import PledgeTracker from "../HomeComponents/PledgeTracker";
-import MapBox from "../Components/MapBox Components/MapBox";
-import Mapboxmain from "../Components/MapBox Components/Mapboxmain"
-import {Container, Row, Col} from "reactstrap";
+import GarminMap from "../HomeComponents/GarminMap";
+import PageHeader from "../HomeComponents/PageHeader";
+
+import { Parallax } from "react-parallax";
+import background from "../images/background.png";
+
 import "../css/Styles.css";
 
 class Rwanda extends Component {
-    render() {
-        return (
-            <div>
-            <NavBar />
-            <h1 style={{paddingTop: "3.5rem"}}>Race Around Rwanda</h1>
-            <div className="iframe"><iframe src="https://share.garmin.com/share/lespoulettesfrites" frameborder="0" marginwidth="0" marginheight="0" width="810" height="760"></iframe></div>
-            <PledgeTracker />
-            <p style={{textAlign: "center"}}>[Why pledge this athlete?]</p>
-            <p style={{textAlign: "center"}}>[User interaction options]</p>
-            {/* <Container style={{paddingTop: "2rem"}}>
+  render() {
+    return (
+      <Parallax bgImage={background} strength={1000} blur={3}>
+        <NavBar />
+        <PageHeader text="Race Around Rwanda" />
+        <GarminMap />
+        <PledgeTracker />
+        <p style={{ textAlign: "center" }}>[Why pledge this athlete?]</p>
+        <p style={{ textAlign: "center" }}>[User interaction options]</p>
+        {/* <Container style={{paddingTop: "2rem"}}>
                 <Row>
                     <Col xs="1"></Col>
                     <Col><h1 style = {{textAlign: "center"}}>Race Around Rwanda</h1></Col>
@@ -45,8 +47,8 @@ class Rwanda extends Component {
                     <Col xs="1"></Col>
                 </Row>
             </Container> */}
-            </div>
-        )
-    }
+      </Parallax>
+    );
+  }
 }
 export default Rwanda;

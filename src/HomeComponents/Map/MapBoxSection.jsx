@@ -2,14 +2,14 @@ import React, { Component } from "react";
 
 import "../../css/Styles.css";
 
-import Mapboxmain from "./Mapboxmain";
+import MapBox from "./MapBox";
 
 class MapBoxSection extends Component {
   render() {
     return (
       <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">
-          <Mapboxmain />
+          <MapBox />
         </div>
       </div>
     );

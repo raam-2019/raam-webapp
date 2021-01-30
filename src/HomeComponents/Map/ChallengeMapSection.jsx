@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
-class RwandaChallenge extends Component {
+class ChallengeMapSection extends Component {
   render() {
     return (
       <div className="Live-Event row">
@@ -23,4 +23,4 @@ class RwandaChallenge extends Component {
   }
 }
 
-export default RwandaChallenge;
+export default ChallengeMapSection;

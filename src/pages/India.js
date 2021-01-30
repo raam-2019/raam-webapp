@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import NavBar from "../HomeComponents/NavBar";
 import LiveEvent from "../HomeComponents/LiveEvent.jsx";
 import PledgeTracker from "../HomeComponents/PledgeTracker";
+import PageHeader from "../HomeComponents/PageHeader";
 import MapBoxmain from "../HomeComponents/Mapboxmain";
+import MapBox from "../HomeComponents/MapBox";
 import {Container, Row, Col} from "reactstrap";
 import "../css/Styles.css";
 
@@ -11,8 +13,8 @@ class India extends Component {
         return (
             <div>
             <NavBar />
-            <h1 style={{paddingTop: "3.5rem"}}>Race Around India</h1>
-            <MapBoxmain />
+            <PageHeader text="Race Around India" />
+            <MapBox />
             <PledgeTracker />
             <p style={{textAlign: "center"}}>[Why pledge this athlete?]</p>
             <p style={{textAlign: "center"}}>[User interaction options]</p>

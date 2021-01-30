@@ -22,9 +22,9 @@ class Fanexperience extends Component {
     viewport: {
       width: "100%",
       height: 500,
-      latitude: 22,
-      longitude: 78,
-      zoom: 5,
+      latitude: 21,
+      longitude: 79,
+      zoom: 4.2,
       bearing: 0,
       pitch: 0,
     },

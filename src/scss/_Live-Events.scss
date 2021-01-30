@@ -25,7 +25,7 @@
     margin-bottom: 20px;
 
     .Map {
-      // Used by mapbox, need this name
+      // Used by mapbox, need this name though
       padding: 0;
       margin: 0;
       width: calc(100% + 30px); // oh yeah its big brain time
@@ -36,8 +36,8 @@
       padding: 0;
       margin: 0;
       width: 104%; // Very sensitive, may need to change
-      margin-left: -2%; // ^
-      margin-bottom: -1.05%; // ^
+      margin-left: -15px; // ^
+      margin-bottom: -10px; // ^
       margin-top: 6px; // ^
     }
   }

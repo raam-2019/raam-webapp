@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
 class GalleryCard extends Component {
   render() {

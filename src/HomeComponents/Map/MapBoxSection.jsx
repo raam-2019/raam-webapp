@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
-import Mapboxmain from "../HomeComponents/Map/Mapboxmain";
+import Mapboxmain from "./Mapboxmain";
 
-class LiveEvent extends Component {
+class MapBoxSection extends Component {
   render() {
     return (
       <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">
           <Mapboxmain />
         </div>
-        <div className="col Live-Event-Feed-Box">Live Feed</div>
       </div>
     );
   }
 }
 
-export default LiveEvent;
+export default MapBoxSection;

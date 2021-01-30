@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import GalleryCard from "../HomeComponents/GalleryCard";
-import "../css/Styles.css";
+import GalleryCard from "./GalleryCard";
+import "../../css/Styles.css";
 
-import haase from "../images/athletes/haase.png";
+import haase from "../../images/athletes/haase.png";
 
 class PastGallery extends Component {
   render() {

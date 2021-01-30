@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar";
-import PledgeTracker from "../HomeComponents/PledgeTracker";
-import GarminMap from "../HomeComponents/GarminMap";
-import PageHeader from "../HomeComponents/PageHeader";
+import NavBar from "../HomeComponents/NavBar/NavBar";
+import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
+import GarminMap from "../HomeComponents/Map/GarminMapSection";
+import PageHeader from "../HomeComponents/Header";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";

@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-import NavBar from "../HomeComponents/NavBar";
-import LiveEvent from "../HomeComponents/LiveEvent.jsx";
-import PledgeTracker from "../HomeComponents/PledgeTracker";
-import PageHeader from "../HomeComponents/PageHeader";
-import MapBoxmain from "../HomeComponents/Mapboxmain";
-import MapBox from "../HomeComponents/MapBox";
-import {Container, Row, Col} from "reactstrap";
+import React, { Component } from "react";
+import NavBar from "../HomeComponents/NavBar/NavBar";
+import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
+import PageHeader from "../HomeComponents/Header";
+
 import "../css/Styles.css";
+import MapSection from "../HomeComponents/Map/MapBoxSection";
 
 class India extends Component {
-    render() {
-        return (
-            <div>
-            <NavBar />
-            <PageHeader text="Race Around India" />
-            <MapBox />
-            <PledgeTracker />
-            <p style={{textAlign: "center"}}>[Why pledge this athlete?]</p>
-            <p style={{textAlign: "center"}}>[User interaction options]</p>
-            {/* <Container style={{paddingTop: "2rem"}}>
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <PageHeader text="Ride Around India" />
+        <MapSection />
+        <PledgeTracker />
+        <p style={{ textAlign: "center" }}>[Why pledge this athlete?]</p>
+        <p style={{ textAlign: "center" }}>[User interaction options]</p>
+        {/* <Container style={{paddingTop: "2rem"}}>
                 <Row>
                     <Col xs="1"></Col>
                     <Col><h1 style = {{textAlign: "center"}}>Race Around Rwanda</h1></Col>
@@ -46,8 +44,8 @@ class India extends Component {
                     <Col xs="1"></Col>
                 </Row>
             </Container> */}
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 export default India;

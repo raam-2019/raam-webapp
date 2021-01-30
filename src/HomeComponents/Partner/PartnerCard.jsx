@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
 class PartnerCard extends Component {
   render() {

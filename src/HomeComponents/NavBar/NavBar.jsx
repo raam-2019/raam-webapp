@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../css/Styles.css";
-import DropButton from "../HomeComponents/DropButton";
+import "../../css/Styles.css";
+import DropButton from "./DropButton";
 
 class NavBar extends Component {
   render() {

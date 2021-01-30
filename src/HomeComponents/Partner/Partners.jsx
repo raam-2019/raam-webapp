@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import "../css/Styles.css";
-import PartnerCard from "../HomeComponents/PartnerCard";
+import "../../css/Styles.css";
+import PartnerCard from "./PartnerCard";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import garmin from "../images/partners/garmin.png";
-import corelogo from "../images/partners/core.png";
-import healthio from "../images/partners/healthio.jpeg";
-import mapbox from "../images/partners/mapbox.png";
-import moxy from "../images/partners/moxy.png";
-import narrativescience from "../images/partners/narrativescience.jpg";
-import theweathercompany from "../images/partners/theweathercompany.jpg";
+import garmin from "../../images/partners/garmin.png";
+import corelogo from "../../images/partners/core.png";
+import healthio from "../../images/partners/healthio.jpeg";
+import mapbox from "../../images/partners/mapbox.png";
+import moxy from "../../images/partners/moxy.png";
+import narrativescience from "../../images/partners/narrativescience.jpg";
+import theweathercompany from "../../images/partners/theweathercompany.jpg";
 
 class Partners extends Component {
   render() {

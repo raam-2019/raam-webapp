@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
-class GarminMap extends Component {
+class GarminMapSection extends Component {
   render() {
     return (
       <div className="Live-Event row">
@@ -23,4 +23,4 @@ class GarminMap extends Component {
   }
 }
 
-export default GarminMap;
+export default GarminMapSection;

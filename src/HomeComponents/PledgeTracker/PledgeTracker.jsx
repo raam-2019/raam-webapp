@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PledgeTrackerBar from "./PledgeTrackerComponent";
 
-import "../css/Styles.css";
+import "../../css/Styles.css";
 
 const pledges = 0;
 

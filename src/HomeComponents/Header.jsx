@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "../css/Styles.css";
 
-class PageHeader extends Component {
+class Header extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class PageHeader extends Component {
   }
 }
 
-export default PageHeader;
+export default Header;

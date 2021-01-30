@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../HomeComponents/NavBar";
 import PledgeTracker from "../HomeComponents/PledgeTracker";
 import GarminMap from "../HomeComponents/GarminMap";
+import RwandaChallenge from "../HomeComponents/RwandaChallenge"
 import PageHeader from "../HomeComponents/PageHeader";
 
 import { Parallax } from "react-parallax";
@@ -15,6 +16,7 @@ class Rwanda extends Component {
       <Parallax bgImage={background} strength={1000} blur={3}>
         <NavBar />
         <PageHeader text="Race Around Rwanda" />
+        <RwandaChallenge />
         <GarminMap />
         <PledgeTracker />
         <p style={{ textAlign: "center" }}>[Why pledge this athlete?]</p>

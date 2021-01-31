@@ -19,16 +19,16 @@ import Oops from "./pages/Oops";
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/India" component={India} exact />
-            <Route path="/Rwanda" component={Rwanda} exact />
-            <Route path="/Oops" component={Oops} exact />
-          </Switch>
-        </BrowserRouter>
-      </Provider>
+      // <Provider store={store}>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/India" component={India} exact />
+          <Route path="/Rwanda" component={Rwanda} exact />
+          <Route path="/Oops" component={Oops} exact />
+        </Switch>
+      </BrowserRouter>
+      // </Provider>
 
       //Fan experience page. This is the first page that will load. For Dashboard access for now
       //we will have to add /dashboardRAAMforVIPaccess to out http

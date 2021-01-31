@@ -15,9 +15,12 @@ h6 {
 
 h1 {
   font-size: 72px;
-  font-weight: 700;
-  letter-spacing: -3px;
+  font-weight: 500;
   text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
+  margin-top: 112px;
 }
 
 h2 {
@@ -68,17 +71,27 @@ a:hover, a:active, a:focus {
   font-weight: 500;
   text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
   padding-top: 3px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-min-content;
+  width: min-content;
 }
 .Nav-Bar .Nav-Bar-Title a:hover, .Nav-Bar .Nav-Bar-Title a:active, .Nav-Bar .Nav-Bar-Title a:focus {
   text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
 }
 .Nav-Bar .Nav-Bar-Content {
   text-align: right;
-  align-items: right;
   display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item {
   padding: 10px;
+  width: -webkit-min-content;
+  width: min-content;
   transition: transform 400ms;
 }
 .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:hover, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:active, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:focus {
@@ -91,11 +104,35 @@ a:hover, a:active, a:focus {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 956px) {
+  h1 {
+    margin-top: 0px !important;
+  }
+
+  .Nav-Bar {
+    position: relative !important;
+    z-index: 0 !important;
+  }
+  .Nav-Bar .Nav-Bar-Title {
+    text-align: center !important;
+  }
+  .Nav-Bar .Nav-Bar-Content {
+    flex-flow: column wrap !important;
+  }
+  .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item {
+    padding: 3px 0 !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Nav-Bar-Title {
+    margin-bottom: 10px !important;
+  }
+}
 .Live-Event {
   padding: 40px 80px;
   padding-bottom: 40px;
   margin: auto;
-  margin-top: 105px;
+  margin-top: -20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,7 +153,17 @@ a:hover, a:active, a:focus {
 }
 .Live-Event .Live-Event-Map-Box .Map {
   padding: 0;
-  width: 100%;
+  margin: 0;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.Live-Event .Live-Event-Map-Box .Garmin-Map {
+  padding: 0;
+  margin: 0;
+  width: 104%;
+  margin-left: -15px;
+  margin-bottom: -10px;
+  margin-top: 6px;
 }
 .Live-Event .Live-Event-Feed-Box {
   background: #ffffff;
@@ -131,6 +178,11 @@ a:hover, a:active, a:focus {
   flex-grow: 0;
 }
 
+@media only screen and (max-width: 520px) {
+  .Live-Event-Map-Box {
+    display: none !important;
+  }
+}
 .Event-Gallery {
   padding: 0 80px;
   padding-bottom: 10px;
@@ -206,24 +258,63 @@ a:hover, a:active, a:focus {
   padding: 20px;
 }
 .Partners .Partners-Box .Partners-Text {
-  display: block;
+  color: #2d2d2c;
   font-size: 20px;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: 300;
 }
 
-.Pledge-Tracker {
-  padding: 20px 80px;
-  padding-bottom: 45px;
+@media only screen and (max-width: 1000px) {
+  .Partners .Partners-Box {
+    margin: 9px 50px;
+  }
 }
-.Pledge-Tracker .Pledge-Tracker-Bar {
+@media only screen and (max-width: 820px) {
+  .Partners .Partners-Text {
+    padding-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 695px) {
+  .Partners-Box {
+    height: 200px !important;
+    width: auto !important;
+    margin: 9px 20px !important;
+  }
+  .Partners-Box .Partners-Text {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .Partners-Box {
+    height: 100px !important;
+    width: auto !important;
+    margin: 9px 10px !important;
+  }
+  .Partners-Box .Partners-Logo {
+    height: 100px !important;
+    padding: 10px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Partners {
+    display: none;
+  }
+}
+.Pledge-Tracker {
+  margin: auto;
+  padding: 0px 80px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  text-align: center;
+  max-width: 1480px;
+}
+.Pledge-Tracker .Pledge-Tracker-Description {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 2px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #2d2d2c;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .Footer {
@@ -246,6 +337,9 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 
+.Dropdown {
+  margin: 9px 0;
+}
 .Dropdown .Dropdown-Toggle {
   margin-left: 10px;
   text-transform: uppercase;
@@ -256,6 +350,7 @@ a:hover, a:active, a:focus {
   border: none;
   height: -webkit-fit-content;
   height: fit-content;
+  max-width: 160px;
   padding-bottom: 7px;
   padding-top: 9px;
 }

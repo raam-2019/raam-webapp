@@ -26,7 +26,7 @@ class AthleteGallery extends Component {
           <div className="col Event-Gallery-Card-Container">
             <GalleryCard
               name="Dr. Amit Samarth"
-              event="Ride Around India"
+              event="Ride Across India"
               img={samarth}
               link="/India"
             ></GalleryCard>

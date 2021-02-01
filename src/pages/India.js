@@ -11,7 +11,7 @@ class India extends Component {
     return (
       <div>
         <NavBar />
-        <PageHeader text="Ride Around India" />
+        <PageHeader text="Ride Across India" />
         <MapSection />
         <PledgeTracker />
         <p style={{ textAlign: "center" }}>[Why pledge this athlete?]</p>

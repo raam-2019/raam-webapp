@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import India from "./pages/India";
 import Rwanda from "./pages/Rwanda";
 import Oops from "./pages/Oops";
+import Pledge from "./pages/Pledge";
 
 // import DashboardPage from "./pages/DashboardPage";
 // import FanPage from "./pages/FanPage";
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/India" component={India} exact />
             <Route path="/Rwanda" component={Rwanda} exact />
             <Route path="/Oops" component={Oops} exact />
+            <Route path="/Pledge" component={Pledge} exact />
           </Switch>
         </BrowserRouter>
       </Provider>

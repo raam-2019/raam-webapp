@@ -10,7 +10,13 @@ class NavBar extends Component {
         <div className="row">
           {/* add col here for icon or something */}
           <div className="col Nav-Bar-Title">
-            <a href="/"><img src={logo} alt="It's Your Move" style={{width: "80%", height: "80%"}} /></a>
+            <a href="/">
+              <img
+                src={logo}
+                alt="It's Your Move"
+                style={{ width: "80%", height: "80%" }}
+              />
+            </a>
           </div>
 
           <div className="col Nav-Bar-Content">
@@ -22,7 +28,7 @@ class NavBar extends Component {
             <div className="Nav-Bar-Content-Item">
               <a
                 className="Nav-Bar-Content-Link"
-                href="https://www.google.com/" // filler link
+                href="/Pledge" // filler link
               >
                 Pledges
               </a>

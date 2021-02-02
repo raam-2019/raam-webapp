@@ -1,50 +1,69 @@
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+
 .Widget {
-    background-color: #34495e;
-    padding: 1rem;
+  background-color: #fffefead;
+  padding: 1rem;
 }
 
 /* autoprefixer: off */
-@supports(display:grid) {
-    .Widget {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto 1fr;
-        grid-template-areas: 
-            "header"
-            "content";
-    }
+@supports (display: grid) {
+  .Widget {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header"
+      "content";
+  }
 
-    .App > * + * {
-        margin-top: 0;
-    }
+  .App > * + * {
+    margin-top: 0;
+  }
 }
 
 .Widget .header {
-    grid-area: header;
-    line-height: 2;
-    display: flex;
-    justify-content: space-between;
+  grid-area: header;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Widget h1 {
+  color: rgb(7, 2, 2);
+  font-size: 1.5rem;
+  font-family: "Bebas Neue";
+  text-align: left;
+  line-height: 1;
+  text-overflow: ellipsis;
 }
 
 .Widget h2 {
-    color: aliceblue;
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 1;
-    text-overflow: ellipsis;
+  color: rgb(2, 4, 5);
+  font-size: 1.5rem;
+  font-family: "Permanent Marker";
+  line-height: 1;
+  text-overflow: ellipsis;
 }
 
 .Widget .Loading {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .Widget .content {
-    grid-area: content;
-    padding-top: 1rem;
+  padding-top: 1rem;
+  color: rgb(0, 0, 0);
+  font-family: "Arial";
 }
 
-@media(max-width: 600px) {
-    .Widget .content {
-        padding-top: 0.25rem;
-    }
+@media (max-width: 600px) {
+  .Widget .content {
+    padding-top: 0.25rem;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }

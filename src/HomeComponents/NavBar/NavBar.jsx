@@ -21,7 +21,7 @@ class NavBar extends Component {
             <div className="Nav-Bar-Content-Item">
               <a
                 className="Nav-Bar-Content-Link"
-                href="src\pages\Pledge.js" // filler link
+                href="/Pledge" // filler link
               >
                 Pledges
               </a>

@@ -9,7 +9,7 @@ import { TwitterShareButton } from "react-twitter-embed";
 import "../css/pledgeStyle.css";
 import Resources from "../Components/Resources";
 
-class FanPage extends Component {
+class Pledge extends Component {
   render() {
     return (
       <React.Fragment>
@@ -105,4 +105,4 @@ class FanPage extends Component {
   }
 }
 
-export default FanPage;
+export default Pledge;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
-import { Provider } from "react-redux"; // Redux Provider
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
 import store from "./store";
 
 import "./css/stylesheet.css"; // import before pages or style gets funky

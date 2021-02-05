@@ -4,9 +4,7 @@ import "../css/Styles.css";
 import NavBar from "../HomeComponents/NavBar/NavBar";
 import PageHeader from "../HomeComponents/Header";
 import LiveEvent from "../HomeComponents/LiveEvent";
-import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
 import AthleteGallery from "../HomeComponents/Gallery/AthleteGallery";
-import PastGallery from "../HomeComponents/Gallery/PastGallery";
 import Partners from "../HomeComponents/Partner/Partners";
 import Footer from "../HomeComponents/Footer";
 

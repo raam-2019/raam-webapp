@@ -12,6 +12,7 @@ class Info extends Component {
         <img
           className="Info-Image"
           src={this.props.image}
+          alt=""
           onerror="this.style.display='none'"
         />
       </section>

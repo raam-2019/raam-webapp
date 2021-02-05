@@ -15,12 +15,18 @@ class IYMSocial extends Component {
             class="fab fa-twitter-square Social-Button"
             href="https://twitter.com/itsyourmove2021"
             target="_blank"
-          />
+            rel="noopener noreferrer"
+          >
+            {" "}
+          </a>
           <a
             className="fab fa-instagram-square Social-Button"
             href="https://www.instagram.com/itsyourmove2021/"
             target="_blank"
-          />
+            rel="noopener noreferrer"
+          >
+            {" "}
+          </a>
         </div>
       </div>
     );

@@ -17,6 +17,7 @@ class LearnMore extends Component {
               <a
                 href="https://www.who.int/news-room/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome/healthyathome---physical-activity"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 World Health Organization
               </a>
@@ -31,6 +32,7 @@ class LearnMore extends Component {
               <a
                 href="https://www.cdc.gov/physicalactivity/how-to-be-physically-active-while-social-distancing.html"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Centers for Disease Control and Prevention
               </a>

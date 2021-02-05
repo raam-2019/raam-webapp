@@ -10,10 +10,10 @@ class LiveEvent extends Component {
       <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">
           {/* USE MAPBOX FOR ALL EVENTS AFTER RWANDA */}
-          {/* <MapBox /> */}
+          <MapBox />
 
           {/* V REMOVE GARMIN MAP WHEN RWANDA IS FINISHED V */}
-          <div className="Garmin-Map">
+          {/* <div className="Garmin-Map">
             <iframe
               src="https://share.garmin.com/share/lespoulettesfrites"
               frameborder="0"
@@ -22,7 +22,7 @@ class LiveEvent extends Component {
               width="100%"
               height="760"
             ></iframe>
-          </div>
+          </div> */}
           {/* ^ REMOVE GARMIN MAP WHEN RWANDA IS FINISHED ^ */}
         </div>
         <div className="col Live-Event-Feed-Box">Live Feed</div>

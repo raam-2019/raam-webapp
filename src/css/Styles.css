@@ -63,22 +63,18 @@ a:hover, a:active, a:focus {
   z-index: 1;
 }
 .Nav-Bar .Nav-Bar-Title {
-  text-align: left;
-  color: #ffffff;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
   padding-top: 3px;
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: left;
   flex-wrap: wrap;
-  width: -webkit-min-content;
-  width: min-content;
+  object-fit: cover;
 }
 .Nav-Bar .Nav-Bar-Title a:hover, .Nav-Bar .Nav-Bar-Title a:active, .Nav-Bar .Nav-Bar-Title a:focus {
   text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
+}
+.Nav-Bar .Nav-Bar-Title a img {
+  width: 350px;
 }
 .Nav-Bar .Nav-Bar-Content {
   text-align: right;
@@ -114,7 +110,7 @@ a:hover, a:active, a:focus {
     z-index: 0 !important;
   }
   .Nav-Bar .Nav-Bar-Title {
-    text-align: center !important;
+    justify-content: center !important;
   }
   .Nav-Bar .Nav-Bar-Content {
     flex-flow: column wrap !important;
@@ -123,9 +119,14 @@ a:hover, a:active, a:focus {
     padding: 3px 0 !important;
   }
 }
-@media only screen and (max-width: 450px) {
-  .Nav-Bar-Title {
-    margin-bottom: 10px !important;
+@media only screen and (max-width: 650px) {
+  .Nav-Bar .Nav-Bar-Title {
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .Nav-Bar .Nav-Bar-Title {
+    padding-right: 0px;
   }
 }
 .Live-Event {
@@ -326,6 +327,88 @@ a:hover, a:active, a:focus {
   text-align: center;
   letter-spacing: 1px;
   padding: 10px 0;
+}
+
+.Video-Header {
+  text-align: center;
+}
+.Video-Header video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Video-Header .Video-Header-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+.Video-Header .Video-Header-Content .Video-Header-Content-Text {
+  color: #ffffff;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4);
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 2vw;
+  text-align: center;
+  padding: 20px 40px;
+}
+.Video-Header .Video-Header-Content .Pledge-Button {
+  margin: 0 10px;
+  font-size: 100px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.Info {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+.Info .Info-Subheading {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+.Info .Info-Content {
+  margin-top: 0;
+}
+.Info .Info-Image {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  width: -webkit-min-content;
+  width: min-content;
+}
+
+.Learn-More {
+  text-align: center;
+  padding: 20px 80px;
+  padding-top: 100px;
+}
+.Learn-More .Learn-More-Content {
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.Learn-More a {
+  color: #da0001;
+}
+.Learn-More a:hover, .Learn-More a:active, .Learn-More a:focus {
+  color: #ffffff;
+}
+.Learn-More .Learn-More-Logo {
+  width: 120px;
 }
 
 .Parallax {

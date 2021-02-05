@@ -1,0 +1,26 @@
+.Social-Button-Box {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  text-align: center;
+  padding: 40px 40px;
+
+  .Social-Button-Header {
+    font-size: 26px;
+  }
+  a {
+    color: #2d2d2c;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #da0001;
+    }
+  }
+  .Social-Button {
+    padding-top: 15px;
+    margin: 0 10px;
+    font-size: 100px;
+    width: 120px;
+  }
+}

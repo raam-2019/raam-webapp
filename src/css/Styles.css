@@ -411,6 +411,43 @@ a:hover, a:active, a:focus {
   width: 120px;
 }
 
+.About-Content {
+  text-align: left;
+  padding: 0 80px;
+}
+.About-Content p {
+  text-indent: 50px;
+}
+
+@media only screen and (max-width: 956px) {
+  .About-Content {
+    text-align: center;
+  }
+  .About-Content p {
+    text-indent: 0;
+    font-size: 18px;
+  }
+}
+.Social-Button-Box {
+  text-align: center;
+  padding: 40px 40px;
+}
+.Social-Button-Box .Social-Button-Header {
+  font-size: 26px;
+}
+.Social-Button-Box a {
+  color: #2d2d2c;
+}
+.Social-Button-Box a:hover, .Social-Button-Box a:active, .Social-Button-Box a:focus {
+  color: #da0001;
+}
+.Social-Button-Box .Social-Button {
+  padding-top: 15px;
+  margin: 0 10px;
+  font-size: 100px;
+  width: 120px;
+}
+
 .Parallax {
   /*background-image: url("backdrop.jpg");*/
   height: 100%;

@@ -8,7 +8,6 @@ class NavBar extends Component {
     return (
       <div className="Nav-Bar">
         <div className="row">
-          {/* add col here for icon or something */}
           <div className="col-sm-6 Nav-Bar-Title">
             <a href="/">
               <img src={logo} alt="It's Your Move" />
@@ -22,11 +21,13 @@ class NavBar extends Component {
               </a>
             </div>
             <div className="Nav-Bar-Content-Item">
-              <a
-                className="Nav-Bar-Content-Link"
-                href="/Pledge" // filler link
-              >
-                Pledges
+              <a className="Nav-Bar-Content-Link" href="/Pledge">
+                Pledge
+              </a>
+            </div>
+            <div className="Nav-Bar-Content-Item">
+              <a className="Nav-Bar-Content-Link" href="/About">
+                About
               </a>
             </div>
             <DropButton />

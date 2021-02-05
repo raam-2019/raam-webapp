@@ -20,9 +20,7 @@ class Home extends Component {
         <NavBar />
         <PageHeader text="Welcome" />
         <LiveEvent />
-        <PledgeTracker />
         <AthleteGallery />
-        <PastGallery />
         <Partners />
         <Footer />
       </Parallax>

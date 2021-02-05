@@ -19,23 +19,22 @@ const DropButton = (props) => {
         Events &emsp;
       </DropdownToggle>
       <DropdownMenu className="Dropdown-Menu" right>
-        {/* REMOVE PROPERTY "disabled" WHEN PAGE BECOMES AVAILABLE*/}
-        <DropdownItem className="Dropdown-Item" href="/Rwanda">
+        <DropdownItem className="Dropdown-Item" href="/Fraissard">
           Sandrine Fraissard
         </DropdownItem>
-        <DropdownItem className="Dropdown-Item" href="/India">
+        <DropdownItem className="Dropdown-Item" href="/Samarth">
           Dr. Amit Samarth
         </DropdownItem>
-        <DropdownItem className="Dropdown-Item" href="" disabled>
+        <DropdownItem className="Dropdown-Item" href="/Haase">
           Dave Haase
         </DropdownItem>
-        <DropdownItem className="Dropdown-Item" href="" disabled>
+        <DropdownItem className="Dropdown-Item" href="/MacDonald">
           James MacDonald
         </DropdownItem>
-        <DropdownItem className="Dropdown-Item" href="" disabled>
+        <DropdownItem className="Dropdown-Item" href="/Cross">
           Julia Cross
         </DropdownItem>
-        <DropdownItem className="Dropdown-Item" href="" disabled>
+        <DropdownItem className="Dropdown-Item" href="/Hering">
           Jackie Hering
         </DropdownItem>
       </DropdownMenu>

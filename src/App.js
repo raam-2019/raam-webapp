@@ -7,9 +7,13 @@ import "./css/stylesheet.css"; // import before pages or style gets funky
 import Home from "./pages/Home";
 import Pledge from "./pages/Pledge";
 import About from "./pages/About";
-import India from "./pages/India";
-import Rwanda from "./pages/Rwanda";
+import Samarth from "./pages/Samarth";
+import Fraissard from "./pages/Fraissard";
 import Oops from "./pages/Oops";
+import Haase from "./pages/Haase";
+import MacDonald from "./pages/MacDonald";
+import Cross from "./pages/Cross";
+import Hering from "./pages/Hering";
 
 class App extends Component {
   render() {
@@ -20,8 +24,12 @@ class App extends Component {
             <Route path="/" component={Home} exact />
             <Route path="/Pledge" component={Pledge} exact />
             <Route path="/About" component={About} exact />
-            <Route path="/India" component={India} exact />
-            <Route path="/Rwanda" component={Rwanda} exact />
+            <Route path="/Samarth" component={Samarth} exact />
+            <Route path="/Fraissard" component={Fraissard} exact />
+            <Route path="/Haase" component={Haase} exact />
+            <Route path="/MacDonald" component={MacDonald} exact />
+            <Route path="/Cross" component={Cross} exact />
+            <Route path="/Hering" component={Hering} exact />
             <Route path="/Oops" component={Oops} exact />
           </Switch>
         </BrowserRouter>

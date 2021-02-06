@@ -7,9 +7,7 @@ class HeringBio extends Component {
     return (
       <div>
         <h2>Bio</h2>
-        <p>
-          Favorite Phrase: "I love life and don't take anything for granted."
-        </p>
+        <p>Favorite Phrase: "Love life and don't take anything for granted."</p>
         <p>Adventure: Snowshoe Running</p>
         <p>Country: USA</p>
         <p>Profession: Professional Triathlete, Coach, Race Director</p>

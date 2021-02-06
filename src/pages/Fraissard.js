@@ -4,7 +4,7 @@ import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
 import PageHeader from "../HomeComponents/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
+import ChallengeMapSection from "../HomeComponents/Map/ChallengeMapSection";
 import FraissardSocial from "../HomeComponents/Social/FraissardSocial";
 import Footer from "../HomeComponents/Footer";
 import AthleteInfo from "../HomeComponents/AthleteInfo";
@@ -26,7 +26,7 @@ class Fraissard extends Component {
           img={fraissard}
           bio={FraissardBio}
         />
-        <MapSection />
+        <ChallengeMapSection />
         <PledgeTracker />
         <FraissardSocial />
         <Footer />

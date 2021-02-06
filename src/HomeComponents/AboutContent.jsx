@@ -27,7 +27,7 @@ class AboutContent extends Component {
           social media, we will be streaming live biometric and performance data
           to the cloud and right to you, our followers. We invite you to use
           their perspiration, heartbeats, and commitment to inspire your pledge
-          of exercise, mindfulness,or social connection.
+          of exercise, mindfulness, or social connection.
         </p>
         <p>
           Please share your pledge with your social followers with the hashtag
@@ -38,7 +38,7 @@ class AboutContent extends Component {
           leaders Mapbox, The Weather Company (and IBM Business), Narrative
           Science, Garmin, Moxy, CORE, and HealthIO (Milliman). Project
           leadership and programming is provided by UW-Madison Computer, Data,
-          and Information Science Undergraduate Project Lab
+          and Information Science Undergraduate Project Lab.
         </p>
         <p>
           We are confident that this is the future of sport. The future of

@@ -388,6 +388,8 @@ a:hover, a:active, a:focus {
   overflow: hidden;
   width: -webkit-min-content;
   width: min-content;
+  width: 450px;
+  margin-bottom: 50px;
 }
 
 .Learn-More {
@@ -430,10 +432,12 @@ a:hover, a:active, a:focus {
 }
 .Social-Button-Box {
   text-align: center;
-  padding: 40px 40px;
+  padding: 0 80px;
 }
 .Social-Button-Box .Social-Button-Header {
   font-size: 26px;
+  padding-bottom: 15px;
+  padding-top: 40px;
 }
 .Social-Button-Box a {
   color: #2d2d2c;
@@ -442,12 +446,26 @@ a:hover, a:active, a:focus {
   color: #da0001;
 }
 .Social-Button-Box .Social-Button {
-  padding-top: 15px;
+  padding-bottom: 40px;
   margin: 0 10px;
   font-size: 100px;
   width: 120px;
 }
 
+@media only screen and (max-width: 575px) {
+  .Social-Button-Box {
+    padding: 0 40px;
+  }
+  .Social-Button-Box .Social-Button {
+    margin: 10px 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Social-Button-Box .Social-Button {
+    margin: 10px 45px;
+    padding-bottom: 0px;
+  }
+}
 .Athlete-Info {
   padding: 40px 80px;
   padding-bottom: 40px;

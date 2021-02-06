@@ -10,6 +10,7 @@ import garmin from "../../images/partners/garmin.png";
 import corelogo from "../../images/partners/core.png";
 import healthio from "../../images/partners/healthio.jpeg";
 import mapbox from "../../images/partners/mapbox.png";
+import attitude from "../../images/partners/attitudesports.jpg";
 import moxy from "../../images/partners/moxy.png";
 import narrativescience from "../../images/partners/narrativescience.jpg";
 import theweathercompany from "../../images/partners/theweathercompany.jpg";
@@ -48,11 +49,15 @@ class Partners extends Component {
               img={corelogo}
               text="CORE is the first non-invasive device that continuously and accurately measures Core Body Temperature under real-life conditions. For athletes who are serious about their performance."
             />
-
             <PartnerCard
               name="Moxy"
               img={moxy}
               text="Moxy is a small, wearable sensor that utilizes infrared light to continuously monitor oxygen saturation (SmO₂) levels in the muscles of athletes while they exercise."
+            />
+            <PartnerCard
+              name="Attitude Sports"
+              img={attitude}
+              text="The official outfitter of It's Your Move. From professional bike repair and fitting services to top cycling products at exceptional prices, Attitude Sports has you covered."
             />
             <PartnerCard
               name="The Weather Company"

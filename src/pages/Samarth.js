@@ -22,7 +22,13 @@ class Samarth extends Component {
         <NavBar />
         <PageHeader text="Dr. Amit Samarth" />
         <AthleteInfo name="Dr. Amit Samarth" img={samarth} bio={SamarthBio} />
-        <MapSection />
+        <MapSection
+          token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
+          style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
+          latitude={21}
+          longitude={79}
+          zoom={4.2}
+        />
         <PledgeTracker />
         <SamarthSocial />
         <Footer />

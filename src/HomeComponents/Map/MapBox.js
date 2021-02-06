@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Container } from "reactstrap";
 // import React from 'react'
-import ReactMapGL, { Marker, Popup, NavigationControl,LinearInterpolator, FlyToInterpolator } from 'react-map-gl';
+import ReactMapGL, {
+  Marker,
+  Popup,
+  NavigationControl,
+  LinearInterpolator,
+  FlyToInterpolator,
+} from "react-map-gl";
 import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
@@ -22,9 +28,9 @@ class Fanexperience extends Component {
     viewport: {
       width: "100%",
       height: 500,
-      latitude: 21,
-      longitude: 79,
-      zoom: 4.2,
+      latitude: this.props.latitude,
+      longitude: this.props.longitude,
+      zoom: this.props.zoom,
       bearing: 0,
       pitch: 0,
     },
@@ -52,8 +58,8 @@ class Fanexperience extends Component {
       <div id="mainWrapper">
         <Container className="Map d-flex flex-wrap align-items-center align-content-center">
           <ReactMapGL
-            mapboxApiAccessToken={INDIA_TOKEN}
-            mapStyle={INDIA_STYLE}
+            mapboxApiAccessToken={this.props.token}
+            mapStyle={this.props.style}
             {...this.state.viewport}
             onViewportChange={this._onViewportChange}
           >

@@ -10,7 +10,13 @@ class LiveEvent extends Component {
       <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">
           {/* USE MAPBOX FOR ALL EVENTS AFTER RWANDA */}
-          <MapBox />
+          <MapBox
+            token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
+            style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
+            latitude={21}
+            longitude={79}
+            zoom={4.2}
+          />
 
           {/* V REMOVE GARMIN MAP WHEN RWANDA IS FINISHED V */}
           {/* <div className="Garmin-Map">

@@ -44,7 +44,7 @@ class LearnMore extends Component {
             <p className="Learn-More-Content">
               Learn&nbsp;
               <a
-                href="https://www.cdc.gov/physicalactivity/how-to-be-physically-active-while-social-distancing.html"
+                href="https://centerhealthyminds.org/join-the-movement/10-well-being-tips-for-the-days-of-covid-19"
                 target="_blank"
                 rel="noopener noreferrer"
               >

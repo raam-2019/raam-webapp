@@ -17,7 +17,7 @@ class PledgeInfo extends Component {
         <div className="Info">
           <h2 className="Info-Heading">Step 2</h2>
           <p className="Info-Content">
-            Pledge an activity (walk, run, ride, meditate), your time andyour
+            Pledge an activity (walk, run, ride, meditate), your time and your
             task.
           </p>
           <img className="Info-Image" src={pledgeEg} alt="Example tweet" />

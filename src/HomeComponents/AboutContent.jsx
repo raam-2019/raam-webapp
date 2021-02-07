@@ -17,7 +17,7 @@ class AboutContent extends Component {
           Today, “It’s Your Move” athletes include 3 men, 3 women and adventures
           that span 4 continents and 5 countries. They include ultradistance
           road cycling, gravel cycling, dogsled mushing, and snowshoe running.
-          It’s a globalproject for health and wellbeing and for a world alive
+          It’s a global project for health and wellbeing and for a world alive
           with purpose, healthy both physically and mentally, and connected to
           each other.
         </p>
@@ -35,13 +35,13 @@ class AboutContent extends Component {
         </p>
         <p>
           Our technology team is supported by technology, fitness, and health
-          leaders Mapbox, The Weather Company (and IBM Business), Narrative
+          leaders Mapbox, The Weather Company (an IBM Business), Narrative
           Science, Garmin, Moxy, CORE, and HealthIO (Milliman). Project
           leadership and programming is provided by UW-Madison Computer, Data,
           and Information Science Undergraduate Project Lab.
         </p>
         <p>
-          We are confident that this is the future of sport. The future of
+          We are confident that this is the future of sports. The future of
           fitness. The future of health and wellbeing; Live contextual,
           biometric and performance data.
         </p>

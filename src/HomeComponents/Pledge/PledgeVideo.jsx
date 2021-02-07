@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import "../../css/Styles.css";
 
 import amitVid from "../../videos/vid1.mp4";
-// import { TwitterShareButton } from "react-twitter-embed";
 
 class PledgeVideo extends Component {
   render() {
@@ -18,9 +17,8 @@ class PledgeVideo extends Component {
         ></video>
         <div className="row Video-Header-Content">
           <h2 className="col-sm-12 Video-Header-Content-Text">
-            Join us in causing a million minutes of exercise, mindfulness,
-            <br />
-            and social connection. Together.
+            The best moment to do something for your well-being is always right
+            now. Pledge some activity to keep yourself safe and healthy.
           </h2>
 
           <div className="col-sm-12">
@@ -49,31 +47,6 @@ class PledgeVideo extends Component {
               {" "}
             </a>
           </div>
-
-          {/* <TwitterShareButton
-            url={"https://itsyourmove2021.org/"}
-            options={{
-              text:
-                "Help us to a million minutes of exercise or mindfulness! I’m doing 20 minutes. #itsyourmove2021 (@ three friends). Learn more at www.itsyourmove2021.org.",
-              via: "iym2021",
-              size: "large",
-            }}
-          />
-
-          <div className="col-sm-6">
-            <div>
-              <iframe
-                className="fb"
-                src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.itsyourmove2021.org%2F&layout=button_count&size=large&width=88&height=28&appId"
-                width="88"
-                height="28"
-                scrolling="no"
-                frameborder="0"
-                allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              ></iframe>
-            </div>
-          </div> */}
         </div>
       </div>
     );

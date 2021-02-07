@@ -14,58 +14,60 @@ import background from "../images/background.png";
 
 import samarth from "../images/AtheletePages/samarth.png";
 import SamarthBio from "../HomeComponents/Bio/SamarthBio";
+import AthleteLiveData from "../HomeComponents/AthleteLiveData";
 
 class Samarth extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: null,
-      isLoaded: false,
-      items: [],
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     error: null,
+  //     isLoaded: false,
+  //     items: [],
+  //   };
+  // }
 
-  componentDidMount() {
-    fetch("https://c0hjtg8xa3.execute-api.us-west-2.amazonaws.com/dev/")
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          console.log(result);
-          this.setState({
-            isLoaded: true,
-            items: result.features,
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error,
-          });
-        }
-      );
-  }
+  // componentDidMount() {
+  //   fetch("https://c0hjtg8xa3.execute-api.us-west-2.amazonaws.com/dev/")
+  //     .then((res) => res.json())
+  //     .then(
+  //       (result) => {
+  //         console.log(result);
+  //         this.setState({
+  //           isLoaded: true,
+  //           items: result.features,
+  //         });
+  //       },
+  //       (error) => {
+  //         this.setState({
+  //           isLoaded: true,
+  //           error,
+  //         });
+  //       }
+  //     );
+  // }
 
   render() {
-    const { error, isLoaded, items } = this.state;
-    console.log(items);
-    if (error) {
-      return <div className="errorMsg">ERROR</div>;
-    } else if (!isLoaded) {
-      return <div className="loadingMsg">Loading...</div>;
-    } else {
-      return (
-        <Parallax bgImage={background} strength={1000} blur={3}>
-          <NavBar />
-          <PageHeader text="Dr. Amit Samarth" />
-          <AthleteInfo name="Dr. Amit Samarth" img={samarth} bio={SamarthBio} />
-          <MapSection
-            token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
-            style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
-            latitude={21}
-            longitude={79}
-            zoom={4.2}
-          />
-          <h2>Live Data</h2>
+    // const { error, isLoaded, items } = this.state;
+    // console.log(items);
+    // if (error) {
+    //   return <div className="errorMsg">ERROR</div>;
+    // } else if (!isLoaded) {
+    //   return <div className="loadingMsg">Loading...</div>;
+    // } else {
+    return (
+      <Parallax bgImage={background} strength={1000} blur={3}>
+        <NavBar />
+        <PageHeader text="Dr. Amit Samarth" />
+        <AthleteInfo name="Dr. Amit Samarth" img={samarth} bio={SamarthBio} />
+        <MapSection
+          token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
+          style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
+          latitude={21}
+          longitude={79}
+          zoom={4.2}
+        />
+        <AthleteLiveData />
+        {/* <h2>Live Data</h2>
           <div className="liveData">
             {items.map((feature) => (
               <table
@@ -122,13 +124,13 @@ class Samarth extends Component {
                 </tr>
               </table>
             ))}
-          </div>
-          <PledgeTracker />
-          <SamarthSocial />
-          <Footer />
-        </Parallax>
-      );
-    }
+          </div> */}
+        <PledgeTracker />
+        <SamarthSocial />
+        <Footer />
+      </Parallax>
+    );
   }
 }
+//}
 export default Samarth;

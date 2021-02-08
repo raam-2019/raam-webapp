@@ -10,9 +10,10 @@ class PledgeTracker extends Component {
     return (
       <div className="Pledge-Tracker">
         <h2>Pledges</h2>
-        <PledgeTrackerBar pledges={pledges} />
+        <PledgeTrackerBar pledges={pledges / 500} />
         <span className="Pledge-Tracker-Description">
-          {pledges} people have made the PLEDGE. Now it's your turn!
+          <strong>{pledges}</strong> people have made the{" "}
+          <strong>PLEDGE</strong>. Now it's your turn!
         </span>
       </div>
     );

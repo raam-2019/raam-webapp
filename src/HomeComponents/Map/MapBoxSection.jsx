@@ -11,7 +11,7 @@ class MapBoxSection extends Component {
         <div className="col Live-Event-Map-Box">
           <MapBox
             token={this.props.token}
-            style={this.props.style}
+            mapStyle={this.props.mapStyle}
             latitude={this.props.latitude}
             longitude={this.props.longitude}
             zoom={this.props.zoom}

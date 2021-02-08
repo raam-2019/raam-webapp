@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import NavBar from "../HomeComponents/NavBar/NavBar";
-import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
 import PageHeader from "../HomeComponents/Header";
 
 import "../css/Styles.css";
@@ -27,7 +26,6 @@ class Fraissard extends Component {
           bio={FraissardBio}
         />
         <ChallengeMapSection />
-        <PledgeTracker />
         <FraissardSocial />
         <Footer />
       </Parallax>

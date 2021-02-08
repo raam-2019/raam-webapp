@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import NavBar from "../HomeComponents/NavBar/NavBar";
-import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
 import PageHeader from "../HomeComponents/Header";
 
 import "../css/Styles.css";
@@ -24,12 +23,11 @@ class Haase extends Component {
         <AthleteInfo name="Dave Haase" img={haase} bio={HaaseBio} />
         <MapSection
           token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
-          style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
+          mapStyle="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
           latitude={21}
           longitude={79}
           zoom={4.2}
         />
-        <PledgeTracker />
         <HaaseSocial />
         <Footer />
       </Parallax>

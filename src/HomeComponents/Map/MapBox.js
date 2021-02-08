@@ -59,7 +59,7 @@ class Fanexperience extends Component {
         <Container className="Map d-flex flex-wrap align-items-center align-content-center">
           <ReactMapGL
             mapboxApiAccessToken={this.props.token}
-            mapStyle={this.props.style}
+            mapStyle={this.props.mapStyle}
             {...this.state.viewport}
             onViewportChange={this._onViewportChange}
           >

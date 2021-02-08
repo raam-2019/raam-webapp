@@ -5,6 +5,7 @@ import "../css/Styles.css";
 import NavBar from "../HomeComponents/NavBar/NavBar";
 import PledgeVideo from "../HomeComponents/Pledge/PledgeVideo";
 import PledgeInfo from "../HomeComponents/Pledge/PledgeInfo";
+import PledgeTracker from "../HomeComponents/PledgeTracker/PledgeTracker";
 import LearnMore from "../HomeComponents/Pledge/LearnMore";
 import Footer from "../HomeComponents/Footer";
 
@@ -18,6 +19,7 @@ class Pledge extends Component {
         <NavBar />
         <PledgeVideo />
         <PledgeInfo />
+        <PledgeTracker />
         <LearnMore />
         <Footer />
       </Parallax>

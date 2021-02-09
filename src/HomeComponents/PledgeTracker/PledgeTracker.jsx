@@ -3,7 +3,7 @@ import PledgeTrackerBar from "./PledgeTrackerComponent";
 
 import "../../css/Styles.css";
 
-const pledges = 20000;
+const pledges = 0;
 
 class PledgeTracker extends Component {
   render() {
@@ -11,8 +11,9 @@ class PledgeTracker extends Component {
       <div className="Pledge-Tracker">
         <h2>Progress</h2>
         <PledgeTrackerBar pledges={pledges / 500} />
+        {/* assumes 20 minute average */}
         <span className="Pledge-Tracker-Description">
-          <strong>{"20,000"}</strong> people have made the PLEDGE. Now it's{" "}
+          <strong>{pledges}</strong> people have made the PLEDGE. Now it's{" "}
           <em>your</em> move!
         </span>
       </div>

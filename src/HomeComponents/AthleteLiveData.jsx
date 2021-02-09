@@ -51,8 +51,8 @@ class AthleteLiveData extends Component {
               >
                 <tr>
                   <td className="liveDataCell">Heart rate:</td>
-                  <td className="liveDataCell" key={feature.properties.hr}>
-                    {feature.properties.hr} bpm
+                  <td className="liveDataCell" key={feature.properties.sensors.hr}>
+                    {feature.properties.sensors.hr} bpm
                   </td>
                 </tr>
                 <tr>
@@ -63,14 +63,14 @@ class AthleteLiveData extends Component {
                 </tr>
                 <tr>
                   <td className="liveDataCell">Cadence:</td>
-                  <td className="liveDataCell" key={feature.properties.cadence}>
-                    {feature.properties.cadence} rpm
+                  <td className="liveDataCell" key={feature.properties.sensors.cadence}>
+                    {feature.properties.sensors.cadence} rpm
                   </td>
                 </tr>
                 <tr>
                   <td className="liveDataCell">Power:</td>
-                  <td className="liveDataCell" key={feature.properties.power}>
-                    {feature.properties.power} watts
+                  <td className="liveDataCell" key={feature.properties.sensors.power}>
+                    {feature.properties.sensors.power} watts
                   </td>
                 </tr>
                 <tr>
@@ -84,16 +84,16 @@ class AthleteLiveData extends Component {
                 </tr>
                 <tr>
                   <td className="liveDataCell">Temperature:</td>
-                  <td className="liveDataCell" key={feature.properties.temp}>
-                    {feature.properties.temp}&#186;C
+                  <td className="liveDataCell" key={feature.properties.sensors.temp}>
+                    {feature.properties.sensors.temp}&#186;C
                   </td>
                 </tr>
                 <tr>
                   <td className="liveDataCell">
                     MO<sub>2</sub>:
                   </td>
-                  <td className="liveDataCell" key={feature.properties.o2sat}>
-                    {feature.properties.o2sat}%
+                  <td className="liveDataCell" key={feature.properties.sensors.mo2.mo2Saturation}>
+                    {feature.properties.sensors.mo2.mo2Saturation}%
                   </td>
                 </tr>
               </table>

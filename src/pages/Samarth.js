@@ -29,7 +29,7 @@ class Samarth extends Component {
           longitude={79}
           zoom={4.2}
         />
-        <AthleteLiveData id="00001" />
+        <AthleteLiveData id="00001" isHome={false} />
         <SamarthSocial />
         <Footer />
       </Parallax>

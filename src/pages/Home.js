@@ -10,6 +10,7 @@ import Footer from "../HomeComponents/Footer";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
+import AthleteLiveData from "../HomeComponents/AthleteLiveData";
 
 class Home extends Component {
   render() {
@@ -17,7 +18,8 @@ class Home extends Component {
       <Parallax bgImage={background} strength={1000} blur={3}>
         <NavBar />
         <PageHeader text="Welcome" />
-        <LiveEvent />
+        {/* <LiveEvent /> */}
+        <AthleteLiveData id="00001" isHome={true}/>
         <AthleteGallery />
         <Partners />
         <Footer />

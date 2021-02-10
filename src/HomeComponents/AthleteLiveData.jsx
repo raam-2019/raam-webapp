@@ -30,10 +30,12 @@ class AthleteLiveData extends Component {
       .then(
         (result) => {
           for (var i = 0; i < result.features.length; i++) {
-            console.log("testing "+result.features[i].properties.device.testing);
-            console.log("props id "+ this.props.id);
+            console.log(
+              "testing " + result.features[i].properties.device.testing
+            );
+            console.log("props id " + this.props.id);
             if (result.features[i].properties.id == this.props.id) {
-              console.log("data id "+result.features[i].properties.id);
+              console.log("data id " + result.features[i].properties.id);
               this.setState({
                 isLoaded: true,
                 index: i,
@@ -49,8 +51,7 @@ class AthleteLiveData extends Component {
           });
         }
       );
-  }
-
+  };
 
   render() {
     const { error, isLoaded, index, items } = this.state;
@@ -60,34 +61,43 @@ class AthleteLiveData extends Component {
     } else if (!isLoaded) {
       return <div className="loadingMsg">Loading...</div>;
     } else if (this.props.isHome) {
-      return (    
+      return (
         <div className="Live-Event row">
           <div className="col Live-Event-Map-Box">
-          <MapBoxSection id={this.props.id} 
-            athleteLat={items[index].geometry.coordinates[1]}
-            athleteLong={items[index].geometry.coordinates[0]}/>
+            <MapBoxSection
+              id={this.props.id}
+              athleteLat={items[index].geometry.coordinates[1]}
+              athleteLong={items[index].geometry.coordinates[0]}
+            />
           </div>
           <div className="col Live-Event-Feed-Box">Live Feed</div>
         </div>
-          
       );
     } else {
       return (
         <div className="">
-          <MapBoxSection id={this.props.id} 
+          <MapBoxSection
+            id={this.props.id}
             athleteLat={items[index].geometry.coordinates[1]}
-            athleteLong={items[index].geometry.coordinates[0]}/>
+            athleteLong={items[index].geometry.coordinates[0]}
+          />
           <h2>Live Data</h2>
-          {items[index].properties.device.testing && !this.props.isHome ? <div className="testingMsg" style={{textAlign: "center"}}>This athlete's data is in the testing stage</div> :
-            <Biometrics
-              hr={items[index].properties.sensors.hr}
-              speed={items[index].properties.speed}
-              cadence={items[index].properties.sensors.cadence}
-              power={items[index].properties.sensors.power}
-              altitude={items[index].properties.altitude}
-              temp={items[index].properties.sensors.temp}
-              mo2={items[index].properties.sensors.mo2.mo2Saturation}
-            />
+          {
+            items[index].properties.device.testing && !this.props.isHome ? (
+              <div className="testingMsg" style={{ textAlign: "center" }}>
+                This athlete's data is in the testing stage
+              </div>
+            ) : (
+              <Biometrics
+                hr={items[index].properties.sensors.hr}
+                speed={items[index].properties.speed}
+                cadence={items[index].properties.sensors.cadence}
+                power={items[index].properties.sensors.power}
+                altitude={items[index].properties.altitude}
+                temp={items[index].properties.sensors.temp}
+                // mo2={items[index].properties.sensors.mo2.mo2Saturation}
+              />
+            )
             // <div className="liveData">
             //     <table
             //       align="center"

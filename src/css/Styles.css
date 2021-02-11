@@ -101,7 +101,7 @@ a:hover, a:active, a:focus {
 
 @media only screen and (max-width: 1125px) {
   h1 {
-    margin-top: 0px !important;
+    margin-top: 30px !important;
   }
 
   .Nav-Bar {
@@ -111,7 +111,7 @@ a:hover, a:active, a:focus {
 }
 @media only screen and (max-width: 956px) {
   h1 {
-    margin-top: 0px !important;
+    margin-top: 33px !important;
   }
 
   .Nav-Bar {
@@ -398,10 +398,6 @@ a:hover, a:active, a:focus {
     margin-bottom: 0px;
   }
 
-  .Video-Header {
-    position: relative !important;
-    z-index: 0 !important;
-  }
   .Video-Header .Video-Header-Content {
     top: 300px;
   }

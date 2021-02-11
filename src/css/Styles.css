@@ -170,8 +170,9 @@ a:hover, a:active, a:focus {
   background: #ffffff;
   box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-  overflow: hidden;
+  overflow-y: scroll;
   min-height: 500px;
+  max-height: 500px;
   min-width: 300px;
   max-width: 300px;
   margin-bottom: 20px;
@@ -539,4 +540,26 @@ a:hover, a:active, a:focus {
   text-decoration: none;
   color: #da0001;
   background-color: #f2f2f2;
+}
+
+/* Live Feed */
+.crt-feed-window {
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.crt-list-post-image {
+    display: none !important;
+}
+
+.crt-list-post a {
+    color: #1e1e23;
+}
+
+.crt-list-post a:hover {
+    color: #8B8E9F;
+}
+
+.crt-list-post-text-wrap {
+    color: #707070;
 }

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "../css/Styles.css";
 import Biometrics from "./Biometrics";
 import MapBoxSection from "./Map/MapBoxSection";
+import CuratorFeed from "./Social/CuratorFeed";
+
+const DEFAULT_FEED = "https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js"
 
 class AthleteLiveData extends Component {
   constructor(props) {
@@ -67,7 +70,9 @@ class AthleteLiveData extends Component {
             athleteLat={items[index].geometry.coordinates[1]}
             athleteLong={items[index].geometry.coordinates[0]}/>
           </div>
-          <div className="col Live-Event-Feed-Box">Live Feed</div>
+          <div className="col Live-Event-Feed-Box">
+            <CuratorFeed feedID="https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js" />
+          </div>
         </div>
           
       );

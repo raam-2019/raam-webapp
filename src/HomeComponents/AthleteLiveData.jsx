@@ -88,14 +88,15 @@ class AthleteLiveData extends Component {
                 This athlete's data is in the testing stage
               </div>
             ) : (
+
               <Biometrics
-                hr={items[index].properties.sensors.hr}
-                speed={items[index].properties.speed}
-                cadence={items[index].properties.sensors.cadence}
-                power={items[index].properties.sensors.power}
-                altitude={items[index].properties.altitude}
-                temp={items[index].properties.sensors.temp}
-                // mo2={items[index].properties.sensors.mo2.mo2Saturation}
+                hr={items[index].properties.sensors.hr !== undefined ? items[index].properties.sensors.hr : undefined}
+                speed={items[index].properties.speed !== undefined ? items[index].properties.speed : undefined}
+                cadence={items[index].properties.sensors.cadence !== undefined ? items[index].properties.sensors.cadence : undefined}
+                power={items[index].properties.sensors.power !== undefined ? items[index].properties.sensors.power : undefined}
+                altitude={items[index].properties.altitude !== undefined ? items[index].properties.altitude : undefined}
+                temp={items[index].properties.sensors.temp !== undefined ? items[index].properties.sensors.temp : undefined}
+                mo2={items[index].properties.sensors.mo2 !== undefined ? items[index].properties.sensors.mo2.mo2Saturation : undefined}
               />
             )
             // <div className="liveData">

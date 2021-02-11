@@ -4,6 +4,8 @@ import Biometrics from "./Biometrics";
 import LiveEvent from "./LiveEvent";
 import MapBoxSection from "./Map/MapBoxSection";
 
+const DEFAULT_FEED = "https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js"
+
 class AthleteLiveData extends Component {
   constructor(props) {
     super(props);
@@ -60,6 +62,7 @@ class AthleteLiveData extends Component {
         <LiveEvent
           athleteLat={items[index].geometry.coordinates[1]}
           athleteLong={items[index].geometry.coordinates[0]}
+          feedID={this.props.feedID || DEFAULT_FEED}
         />
       );
     } else {

@@ -4,7 +4,7 @@ import Biometrics from "./Biometrics";
 import LiveEvent from "./LiveEvent";
 import MapBoxSection from "./Map/MapBoxSection";
 
-const DEFAULT_FEED = "https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js"
+const DEFAULT_FEED = "https://cdn.curator.io/published/9f9e3fe1-73a0-40c2-a822-81500b89790d.js"
 
 class AthleteLiveData extends Component {
   constructor(props) {

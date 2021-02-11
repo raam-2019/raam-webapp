@@ -1,5 +1,6 @@
 .Info {
   text-align: center;
+
   margin-top: 40px;
   margin-bottom: -40px;
 
@@ -13,6 +14,8 @@
   }
 
   .Info-Content {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 0;
   }
 
@@ -24,5 +27,13 @@
     width: min-content;
     width: 450px;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Info {
+    .Info-Image {
+      width: 300px;
+    }
   }
 }

@@ -14,37 +14,37 @@ class Biometrics extends Component {
                   <tr>
                     <td className="liveDataCell">Heart rate:</td>
                     <td className="liveDataCell">
-                      {this.props.hr} bpm
+                      {this.props.hr !== undefined ? this.props.hr + " bpm" : "No data"}
                     </td>
                   </tr>
                   <tr>
                     <td className="liveDataCell">Speed:</td>
                     <td className="liveDataCell">
-                      {this.props.speed * 3.6} km/hr
+                      {this.props.speed !== undefined ? this.props.speed * 3.6 + " km/hr" : "No data"}
                     </td>
                   </tr>
                   <tr>
                     <td className="liveDataCell">Cadence:</td>
                     <td className="liveDataCell">
-                      {this.props.cadence} rpm
+                    {this.props.cadence !== undefined ? this.props.cadence + " rpm" : "No data"}
                     </td>
                   </tr>
                   <tr>
                     <td className="liveDataCell">Power:</td>
                     <td className="liveDataCell">
-                      {this.props.power} watts
+                    {this.props.power !== undefined ? this.props.power + " watts" : "No data"}
                     </td>
                   </tr>
                   <tr>
                     <td className="liveDataCell">Altitude:</td>
                     <td className="liveDataCell">
-                      {this.props.altitude} meters
+                      {this.props.altitude !== undefined ? this.props.altitude + " meters" : "No data"}
                     </td>
                   </tr>
                   <tr>
                     <td className="liveDataCell">Temperature:</td>
                     <td className="liveDataCell">
-                      {this.props.temp}&#186;C
+                    {this.props.temp !== undefined ? this.props.temp + "\u00B0 C" : "No data"}
                     </td>
                   </tr>
                   <tr>
@@ -52,7 +52,7 @@ class Biometrics extends Component {
                       MO<sub>2</sub>:
                     </td>
                     <td className="liveDataCell">
-                      {this.props.mo2}%
+                    {this.props.mo2 !== undefined ? this.props.mo2 + "%" : "No data"}
                     </td>
                   </tr>
                 </tbody>

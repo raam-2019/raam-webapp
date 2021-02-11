@@ -3,7 +3,6 @@ import "../css/Styles.css";
 
 import NavBar from "../HomeComponents/NavBar/NavBar";
 import PageHeader from "../HomeComponents/Header";
-import LiveEvent from "../HomeComponents/LiveEvent";
 import AthleteGallery from "../HomeComponents/Gallery/AthleteGallery";
 import Partners from "../HomeComponents/Partner/Partners";
 import Footer from "../HomeComponents/Footer";
@@ -18,8 +17,8 @@ class Home extends Component {
       <Parallax bgImage={background} strength={1000} blur={3}>
         <NavBar />
         <PageHeader text="Welcome" />
-        {/* <LiveEvent /> */}
-        <AthleteLiveData id="00001" isHome={true}/>
+        {/* To update homepage map, must manually change props in LiveEvent */}
+        <AthleteLiveData id="00001" isHome={true} />
         <AthleteGallery />
         <Partners />
         <Footer />

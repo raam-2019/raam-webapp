@@ -30,12 +30,7 @@ class AthleteLiveData extends Component {
       .then(
         (result) => {
           for (var i = 0; i < result.features.length; i++) {
-            console.log(
-              "testing " + result.features[i].properties.device.testing
-            );
-            console.log("props id " + this.props.id);
             if (result.features[i].properties.id == this.props.id) {
-              console.log("data id " + result.features[i].properties.id);
               this.setState({
                 isLoaded: true,
                 index: i,
@@ -55,7 +50,6 @@ class AthleteLiveData extends Component {
 
   render() {
     const { error, isLoaded, index, items } = this.state;
-    console.log(items);
     if (error) {
       return <div className="errorMsg">ERROR</div>;
     } else if (!isLoaded) {

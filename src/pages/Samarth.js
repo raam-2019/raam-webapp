@@ -3,7 +3,6 @@ import NavBar from "../HomeComponents/NavBar/NavBar";
 import PageHeader from "../HomeComponents/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
 import SamarthSocial from "../HomeComponents/Social/SamarthSocial";
 import Footer from "../HomeComponents/Footer";
 import AthleteInfo from "../HomeComponents/AthleteInfo";

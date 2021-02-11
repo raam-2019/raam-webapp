@@ -31,7 +31,7 @@ class AthleteLiveData extends Component {
       .then(
         (result) => {
           for (var i = 0; i < result.features.length; i++) {
-            if (result.features[i].properties.id == this.props.id) {
+            if (result.features[i].properties.id === this.props.id) {
               this.setState({
                 isLoaded: true,
                 index: i,

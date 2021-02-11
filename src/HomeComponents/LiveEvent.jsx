@@ -8,15 +8,17 @@ class LiveEvent extends Component {
   render() {
     return (
       <div className="Live-Event row">
-        {/* <div className="col Live-Event-Map-Box">
+        <div className="col Live-Event-Map-Box">
           {/* USE MAPBOX FOR ALL EVENTS AFTER RWANDA */}
-          {/* <MapBox
+          <MapBox
             token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
             mapStyle="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
             latitude={21}
             longitude={79}
+            markLat={this.props.athleteLat}
+            markLong={this.props.athleteLong}
             zoom={4.2}
-          /> */}
+          />
 
           {/* V REMOVE GARMIN MAP WHEN RWANDA IS FINISHED V */}
           {/* <div className="Garmin-Map">
@@ -30,7 +32,7 @@ class LiveEvent extends Component {
             ></iframe>
           </div> */}
           {/* ^ REMOVE GARMIN MAP WHEN RWANDA IS FINISHED ^ */}
-        {/*</div> */}
+        </div>
         <div className="col Live-Event-Feed-Box">Live Feed</div>
       </div>
     );

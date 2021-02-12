@@ -9,6 +9,7 @@ import "../css/Styles.css";
 import Footer from "../HomeComponents/Footer";
 import AboutContent from "../HomeComponents/AboutContent";
 import IYMSocial from "../HomeComponents/Social/IYMSocial";
+import IYMTeam from "../HomeComponents/IYMTeam";
 
 class About extends Component {
   render() {
@@ -18,6 +19,7 @@ class About extends Component {
         <PageHeader text="About" />
         <AboutContent />
         <IYMSocial />
+        <IYMTeam />
         <Footer />
       </Parallax>
     );

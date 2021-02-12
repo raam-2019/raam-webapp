@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 import PageHeader from "../Components/Header";
 
 import { Parallax } from "react-parallax";

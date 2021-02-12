@@ -15,9 +15,6 @@ import CL from "../images/Team Pics/ChrisLewis.jpg";
 import AC from "../images/Team Pics/AdamC.jpg";
 import CD from "../images/Team Pics/CarsonD.jpg";
 
-
-
-
 class IYMTeam extends Component {
   state = {};
   render() {

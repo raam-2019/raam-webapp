@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
-import HeringSocial from "../HomeComponents/Social/HeringSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import MapSection from "../Components/Map/MapBoxSection";
+import HeringSocial from "../Components/Social/HeringSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import hering from "../images/AtheletePages/hering.png";
-import HeringBio from "../HomeComponents/Bio/HeringBio";
+import HeringBio from "../Components/Bio/HeringBio";
 
 class Hering extends Component {
   render() {

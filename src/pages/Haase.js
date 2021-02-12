@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
-import HaaseSocial from "../HomeComponents/Social/HaaseSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import MapSection from "../Components/Map/MapBoxSection";
+import HaaseSocial from "../Components/Social/HaaseSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import haase from "../images/AtheletePages/haase.png";
-import HaaseBio from "../HomeComponents/Bio/HaaseBio";
+import HaaseBio from "../Components/Bio/HaaseBio";
 
 class Haase extends Component {
   render() {

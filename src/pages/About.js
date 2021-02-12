@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import PageHeader from "../Components/Header";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import "../css/Styles.css";
-import Footer from "../HomeComponents/Footer";
-import AboutContent from "../HomeComponents/AboutContent";
-import IYMSocial from "../HomeComponents/Social/IYMSocial";
+import Footer from "../Components/Footer";
+import AboutContent from "../Components/AboutContent";
+import IYMSocial from "../Components/Social/IYMSocial";
 
 class About extends Component {
   render() {

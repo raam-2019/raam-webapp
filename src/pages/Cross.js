@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
-import CrossSocial from "../HomeComponents/Social/CrossSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import MapSection from "../Components/Map/MapBoxSection";
+import CrossSocial from "../Components/Social/CrossSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import cross from "../images/AtheletePages/cross.png";
-import CrossBio from "../HomeComponents/Bio/CrossBio";
+import CrossBio from "../Components/Bio/CrossBio";
 
 class Cross extends Component {
   render() {

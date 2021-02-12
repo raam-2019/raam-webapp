@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import SamarthSocial from "../HomeComponents/Social/SamarthSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import SamarthSocial from "../Components/Social/SamarthSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import samarth from "../images/AtheletePages/samarth.png";
-import SamarthBio from "../HomeComponents/Bio/SamarthBio";
-import AthleteLiveData from "../HomeComponents/AthleteLiveData";
+import SamarthBio from "../Components/Bio/SamarthBio";
+import AthleteLiveData from "../Components/AthleteLiveData";
 
 class Samarth extends Component {
   render() {

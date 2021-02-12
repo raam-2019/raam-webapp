@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "../css/Styles.css";
 
-import MapBox from "../HomeComponents/Map/MapBox";
+import MapBox from "./Map/MapBox";
 import CuratorFeed from "./CuratorFeed";
 
 class LiveEvent extends Component {

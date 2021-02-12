@@ -30,7 +30,7 @@ class IYMTeam extends Component {
         <div className="Team">
           <div className="row">
             <div className="col-sm-4">
-              <img className="Team-Picture-Doug" src={DB} alt="DB" />
+              <img className="Team-Picture" src={DB} alt="DB" />
               <p className="Team-Content">
                 <p className="Team-Name">Doug Barton</p>
                 <p>Director of E-Buisness Consortium at UW-Madison</p>

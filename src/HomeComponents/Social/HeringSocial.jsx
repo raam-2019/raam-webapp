@@ -12,7 +12,7 @@ class HeringSocial extends Component {
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-americas Social-Button"
+            className="fas fa-globe-americas Social-Button"
             href="https://www.jackiehering.com/index.html"
             target="_blank"
             rel="noopener noreferrer"

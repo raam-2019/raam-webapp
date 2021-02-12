@@ -12,7 +12,7 @@ class FraissardSocial extends Component {
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-europe Social-Button"
+            className="fas fa-globe-europe Social-Button"
             href="https://racearoundrwanda.com/"
             target="_blank"
             rel="noopener noreferrer"

@@ -181,12 +181,12 @@ a:hover, a:active, a:focus {
   border-radius: 6px;
   overflow-y: scroll;
   min-height: 500px;
-  max-height: 500px;
   min-width: 300px;
   max-width: 300px;
   margin-bottom: 20px;
   flex-shrink: 0;
   flex-grow: 0;
+  height: 500px;
 }
 
 @media only screen and (max-width: 520px) {
@@ -217,9 +217,6 @@ a:hover, a:active, a:focus {
   width: 100%;
   transition: transform 400ms;
 }
-.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:hover, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:active, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:focus {
-  transform: scale(1.1);
-}
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Image {
   height: 200px;
   width: 100%;
@@ -234,6 +231,8 @@ a:hover, a:active, a:focus {
   display: block;
   font-size: 20px;
   margin-bottom: 5px;
+  margin-top: 0;
+  color: #ffffff;
 }
 .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Bio {
   display: block;
@@ -242,6 +241,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
+}
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:hover, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:active, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:focus {
+  transform: scale(1.1);
+}
+.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:hover .Event-Gallery-Card-Name, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:active .Event-Gallery-Card-Name, .Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card:focus .Event-Gallery-Card-Name {
+  color: #da0001;
 }
 
 .Partners {
@@ -567,6 +572,28 @@ a:hover, a:active, a:focus {
   flex-grow: 0;
 }
 
+.crt-feed-window {
+  z-index: 0;
+  margin-top: 20px;
+}
+.crt-feed-window .crt-feed .crt-list-post-image {
+  display: none !important;
+}
+.crt-feed-window .crt-feed .crt-list-post .crt-post-header .crt-post-fullname {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  font-size: 24px;
+}
+.crt-feed-window .crt-feed .crt-list-post a {
+  color: #da0001;
+}
+.crt-feed-window .crt-feed .crt-list-post a:hover, .crt-feed-window .crt-feed .crt-list-post a:active, .crt-feed-window .crt-feed .crt-list-post a:focus {
+  color: #707070;
+}
+.crt-feed-window .crt-feed .crt-list-post-text-wrap {
+  color: #2d2d2c;
+}
+
 .Parallax {
   /*background-image: url("backdrop.jpg");*/
   height: 100%;
@@ -613,26 +640,4 @@ a:hover, a:active, a:focus {
   text-decoration: none;
   color: #da0001;
   background-color: #f2f2f2;
-}
-
-/* Live Feed */
-.crt-feed-window {
-    z-index: 0;
-    margin-top: 20px;
-}
-
-.crt-list-post-image {
-    display: none !important;
-}
-
-.crt-list-post a {
-    color: #1e1e23;
-}
-
-.crt-list-post a:hover {
-    color: #8B8E9F;
-}
-
-.crt-list-post-text-wrap {
-    color: #707070;
 }

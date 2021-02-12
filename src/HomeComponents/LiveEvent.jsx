@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "../css/Styles.css";
 
 import MapBox from "../HomeComponents/Map/MapBox";
-import CuratorFeed from "./Social/CuratorFeed";
+import CuratorFeed from "./CuratorFeed";
 
 class LiveEvent extends Component {
   render() {
@@ -35,7 +35,7 @@ class LiveEvent extends Component {
           {/* ^ REMOVE GARMIN MAP WHEN RWANDA IS FINISHED ^ */}
         </div>
         <div className="col Live-Event-Feed-Box">
-            <CuratorFeed feedID={this.props.feedID} />
+          <CuratorFeed feedID={this.props.feedID} />
         </div>
       </div>
     );

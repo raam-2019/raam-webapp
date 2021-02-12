@@ -13,11 +13,7 @@ class GalleryCard extends Component {
             alt={this.props.name}
           ></img>
           <div className="Event-Gallery-Card-Info">
-            <span className="Event-Gallery-Card-Name">
-              <a className="Event-Link" href={this.props.link}>
-                {this.props.name}
-              </a>
-            </span>
+            <p className="Event-Gallery-Card-Name">{this.props.name}</p>
             <span className="Event-Gallery-Card-Bio">{this.props.event}</span>
           </div>
         </a>

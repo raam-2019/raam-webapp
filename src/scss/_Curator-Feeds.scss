@@ -1,0 +1,34 @@
+.crt-feed-window {
+  z-index: 0;
+  margin-top: 20px;
+
+  .crt-feed {
+    .crt-list-post-image {
+      display: none !important;
+    }
+
+    .crt-list-post {
+      .crt-post-header {
+        .crt-post-fullname {
+          margin-top: -10px;
+          margin-bottom: -10px;
+          font-size: 24px;
+        }
+      }
+
+      a {
+        color: #da0001;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #707070;
+        }
+      }
+    }
+
+    .crt-list-post-text-wrap {
+      color: #2d2d2c;
+    }
+  }
+}

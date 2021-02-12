@@ -12,7 +12,7 @@ class SamarthSocial extends Component {
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-asia Social-Button"
+            className="fas fa-globe-asia Social-Button"
             href="https://rideacrossindia.com/"
             target="_blank"
             rel="noopener noreferrer"

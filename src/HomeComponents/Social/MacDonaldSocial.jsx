@@ -12,7 +12,7 @@ class MacDonaldSocial extends Component {
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-europe Social-Button"
+            className="fas fa-globe-europe Social-Button"
             href="https://www.projectkansas.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -20,7 +20,7 @@ class MacDonaldSocial extends Component {
             {" "}
           </a>
           <a
-            class="fab fa-twitter-square Social-Button"
+            className="fab fa-twitter-square Social-Button"
             href="https://twitter.com/jammacdo"
             target="_blank"
             rel="noopener noreferrer"

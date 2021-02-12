@@ -14,6 +14,8 @@ import PL from "../images/Team Pics/placeholder.png";
 import CL from "../images/Team Pics/ChrisLewis.jpg";
 import AC from "../images/Team Pics/AdamC.jpg";
 import CD from "../images/Team Pics/CarsonD.jpg";
+import IH from "../images/Team Pics/IvanHu.jpg";
+
 
 class IYMTeam extends Component {
   state = {};
@@ -128,7 +130,7 @@ class IYMTeam extends Component {
               </p>
             </div>
             <div className="col-sm-4">
-              <img className="Team-Picture" src={PL} alt="PL" />
+              <img className="Team-Picture" src={IH} alt="IH" />
               <p className="Team-Content">
                 <p className="Team-Name">Ivan Hu</p>
                 <p>Computer Science at UW-Madison</p>

@@ -6,7 +6,7 @@ class AthleteInfo extends Component {
   render() {
     return (
       <div className="Athlete-Info row">
-        <div className="col">
+        <div className="col Athlete-Info-Photo-Box">
           <img
             className="Athlete-Info-Photo"
             src={this.props.img}

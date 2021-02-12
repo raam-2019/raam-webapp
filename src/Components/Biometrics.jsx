@@ -4,6 +4,40 @@ import "../css/Styles.css";
 class Biometrics extends Component {
   render() {
     return (
+      // <div className="Live-Data">
+      //   <div className="Live-Data-Cell">
+      //     {this.props.hr !== undefined ? this.props.hr + " bpm" : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.speed !== undefined
+      //       ? this.props.speed * 3.6 + " km/hr"
+      //       : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.cadence !== undefined
+      //       ? this.props.cadence + " rpm"
+      //       : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.power !== undefined
+      //       ? this.props.power + " watts"
+      //       : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.altitude !== undefined
+      //       ? this.props.altitude + " meters"
+      //       : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.temp !== undefined
+      //       ? this.props.temp + "\u00B0 C"
+      //       : "No data"}
+      //   </div>
+      //   <div className="Live-Data-Cell">
+      //     {this.props.mo2 !== undefined ? this.props.mo2 + "%" : "No data"}
+      //   </div>
+      // </div>
+
       <div className="liveData">
         <table
           align="center"

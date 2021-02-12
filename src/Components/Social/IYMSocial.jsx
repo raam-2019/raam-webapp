@@ -12,7 +12,7 @@ class IYMSocial extends Component {
         </div>
         <div className="col-sm-12">
           <a
-            class="fab fa-twitter-square Social-Button"
+            className="fab fa-twitter-square Social-Button"
             href="https://twitter.com/itsyourmove2021"
             target="_blank"
             rel="noopener noreferrer"

@@ -16,6 +16,18 @@
         }
       }
 
+      .crt-post-footer {
+        .crt-post-username {
+          display: none;
+        }
+        .crt-post-date {
+          margin-left: -20px;
+        }
+        .crt-post-share {
+          margin-right: 10px;
+        }
+      }
+
       a {
         color: #da0001;
 

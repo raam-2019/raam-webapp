@@ -1,7 +1,7 @@
 .Athlete-Info {
   padding: 40px 80px;
   padding-bottom: 40px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   margin-top: -20px;
   margin-bottom: 30px;
@@ -10,25 +10,53 @@
   flex-direction: row;
   justify-content: center;
 
-  .Athlete-Info-Photo {
-    background: #ffffff;
-    box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    overflow: hidden;
-    // max-width: 1000px; // Mapbox doesn't cooperate well with wider frames
-    // min-width: 500px;
-    flex-shrink: 3;
-    flex-grow: 3;
-    //align-self: stretch;
+  .Athlete-Info-Photo-Box {
+    text-align: center;
 
-    height: 500px;
+    .Athlete-Info-Photo {
+      background: #ffffff;
+      box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      overflow: hidden;
+      width: 500px;
+    }
   }
 
   .Athlete-Info-Bio-Box {
     text-align: left;
-    min-width: 300px;
+    min-width: 500px;
     margin-bottom: 20px;
     flex-shrink: 0;
     flex-grow: 0;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .Athlete-Info {
+    padding-bottom: 0px;
+
+    .Athlete-Info-Bio-Box {
+      margin-top: 50px;
+    }
+    .Athlete-Info-Bio-Box {
+      text-align: center !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Athlete-Info-Photo {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Athlete-Info {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .Athlete-Info-Bio-Box {
+      min-width: 350px !important;
+    }
   }
 }

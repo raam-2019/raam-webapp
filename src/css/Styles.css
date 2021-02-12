@@ -41,7 +41,9 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #da0001;
   text-decoration: none;
 }
@@ -69,7 +71,9 @@ a:hover, a:active, a:focus {
   flex-wrap: wrap;
   object-fit: cover;
 }
-.Nav-Bar .Nav-Bar-Title a:hover, .Nav-Bar .Nav-Bar-Title a:active, .Nav-Bar .Nav-Bar-Title a:focus {
+.Nav-Bar .Nav-Bar-Title a:hover,
+.Nav-Bar .Nav-Bar-Title a:active,
+.Nav-Bar .Nav-Bar-Title a:focus {
   text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
 }
 .Nav-Bar .Nav-Bar-Title a img {
@@ -89,7 +93,9 @@ a:hover, a:active, a:focus {
   width: min-content;
   transition: transform 400ms;
 }
-.Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:hover, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:active, .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:focus {
+.Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:hover,
+.Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:active,
+.Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item:focus {
   transform: scale(1.1);
 }
 .Nav-Bar .Nav-Bar-Content .Nav-Bar-Content-Item .Nav-Bar-Content-Link {
@@ -222,19 +228,30 @@ a:hover, a:active, a:focus {
   width: 100%;
   object-fit: cover;
 }
-.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info {
+.Event-Gallery
+  .Event-Gallery-Card-Container
+  .Event-Gallery-Card
+  .Event-Gallery-Card-Info {
   padding: 25px 5px;
   background: #2d2d2c;
   text-align: center;
 }
-.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Name {
+.Event-Gallery
+  .Event-Gallery-Card-Container
+  .Event-Gallery-Card
+  .Event-Gallery-Card-Info
+  .Event-Gallery-Card-Name {
   display: block;
   font-size: 20px;
   margin-bottom: 5px;
   margin-top: 0;
   color: #ffffff;
 }
-.Event-Gallery .Event-Gallery-Card-Container .Event-Gallery-Card .Event-Gallery-Card-Info .Event-Gallery-Card-Bio {
+.Event-Gallery
+  .Event-Gallery-Card-Container
+  .Event-Gallery-Card
+  .Event-Gallery-Card-Info
+  .Event-Gallery-Card-Bio {
   display: block;
   color: #a7a7a7;
   font-size: 14px;
@@ -484,7 +501,9 @@ a:hover, a:active, a:focus {
 .Learn-More a {
   color: #da0001;
 }
-.Learn-More a:hover, .Learn-More a:active, .Learn-More a:focus {
+.Learn-More a:hover,
+.Learn-More a:active,
+.Learn-More a:focus {
   color: #ffffff;
 }
 .Learn-More .Learn-More-Logo {
@@ -520,7 +539,9 @@ a:hover, a:active, a:focus {
 .Social-Button-Box a {
   color: #2d2d2c;
 }
-.Social-Button-Box a:hover, .Social-Button-Box a:active, .Social-Button-Box a:focus {
+.Social-Button-Box a:hover,
+.Social-Button-Box a:active,
+.Social-Button-Box a:focus {
   color: #da0001;
 }
 .Social-Button-Box .Social-Button {
@@ -620,7 +641,9 @@ a:hover, a:active, a:focus {
   padding-bottom: 7px;
   padding-top: 9px;
 }
-.Dropdown .Dropdown-Toggle:hover, .Dropdown .Dropdown-Toggle:active, .Dropdown .Dropdown-Toggle:focus {
+.Dropdown .Dropdown-Toggle:hover,
+.Dropdown .Dropdown-Toggle:active,
+.Dropdown .Dropdown-Toggle:focus {
   background: linear-gradient(315deg, #da0001, 50%, #f17e7e);
 }
 .Dropdown .Dropdown-Menu {
@@ -636,8 +659,34 @@ a:hover, a:active, a:focus {
   padding-right: 20px;
   text-align: right;
 }
-.Dropdown .Dropdown-Menu .Dropdown-Item:hover, .Dropdown .Dropdown-Menu .Dropdown-Item:active, .Dropdown .Dropdown-Menu .Dropdown-Item:focus {
+.Dropdown .Dropdown-Menu .Dropdown-Item:hover,
+.Dropdown .Dropdown-Menu .Dropdown-Item:active,
+.Dropdown .Dropdown-Menu .Dropdown-Item:focus {
   text-decoration: none;
   color: #da0001;
   background-color: #f2f2f2;
+}
+
+.Team {
+  text-align: center;
+  padding: 0px 0px;
+  padding-top: 100px;
+}
+.Team .Team-Content {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.Team .Team-Picture {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.Team .Team-Name {
+  color: rgba(236, 18, 18, 0.623);
+}
+
+.Team .LinkedIn-Link {
+  color: #383d3a;
+  text-decoration: underline;
 }

@@ -34,7 +34,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Doug Barton</p>
                 <p>Director of E-Buisness Consortium at UW-Madison</p>
-                <a href="https://www.linkedin.com/in/bartondoug/">Linkedin</a>
+                <a className="LinkedIn-Link" href="https://www.linkedin.com/in/bartondoug/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -43,7 +43,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Douglas Robertson</p>
                 <p>Aeronautical Data Analyst</p>
-                <a href="https://www.linkedin.com/in/dbrobert/">Linkedin</a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/dbrobert/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -54,7 +54,7 @@ class IYMTeam extends Component {
                 <p>
                   Computer Science at UW-Madison | Undergraduate Project Lab Coordinator
                 </p>
-                <a href="https://www.linkedin.com/in/matt-wildman/">Linkedin</a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/matt-wildman/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -63,7 +63,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Ted Morris</p>
                 <p>CDO and Co-Founder at Klarrio US</p>
-                <a href="https://www.linkedin.com/in/tedmorris3/">Linkedin</a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/tedmorris3/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -72,7 +72,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Ryan West</p>
                 <p>Co-Founder, Head of Applied Science at Idio Analytics</p>
-                <a href="https://www.linkedin.com/in/ryan-west-88187821/">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/ryan-west-88187821/">
                   Linkedin
                 </a>
                 <br></br>
@@ -85,7 +85,7 @@ class IYMTeam extends Component {
                 <p>
                   Senior Product Manager at Dell
                 </p>
-                <a href="https://www.linkedin.com/in/chris-lewis-1007248/">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/chris-lewis-1007248/">
                   Linkedin
                 </a>
                 <br></br>
@@ -96,7 +96,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Adam Converse</p>
                 <p>Senior Software Engineer at Zendesk</p>
-                <a href="https://www.linkedin.com/in/adam-converse-498667a4/">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/adam-converse-498667a4/">
                   Linkedin
                 </a>
                 <br></br>
@@ -107,7 +107,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Reed Nelson</p>
                 <p>Computer Science at UW-Madison | Undergraduate Project Lab Coordinator</p>
-                <a href="https://www.linkedin.com/in/reed-nelson-a24ba2196?trk=public_profile_browsemap_profile-result-card_result-card_full-click">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/reed-nelson-a24ba2196?trk=public_profile_browsemap_profile-result-card_result-card_full-click">
                   Linkedin
                 </a>
                 <br></br>
@@ -118,7 +118,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Jessica Miyake</p>
                 <p>UW-Madison Computer Science and Digital Studies Alumni</p>
-                <a href="https://www.linkedin.com/in/jessicamiyake/">  Linkedin </a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/jessicamiyake/">  Linkedin </a>
                 <br></br>
               </p>
             </div>
@@ -127,7 +127,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Carson Drury</p>
                 <p>Computer Science at UW-Madison | Undergraduate Project Lab Coordinator</p>
-                <a href="https://www.linkedin.com/in/carson-drury/">Linkedin</a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/carson-drury/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -136,7 +136,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Ivan Hu</p>
                 <p>Computer Science at UW-Madison</p>
-                <a href="insert Linkedin">Linkedin</a>
+                <a className="LinkedIn-Link"href="insert Linkedin">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -148,7 +148,7 @@ class IYMTeam extends Component {
                   Data Scientist at American Family Insurance Data Science
                   Institute
                 </p>
-                <a href="https://www.linkedin.com/in/steven-wangen/">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/steven-wangen/">
                   Linkedin
                 </a>
                 <br></br>
@@ -159,7 +159,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Benjamin Lewis</p>
                 <p>CS Student at UW-Madison</p>
-                <a href="https://www.linkedin.com/in/bslewis/">Linkedin</a>
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/bslewis/">Linkedin</a>
                 <br></br>
               </p>
             </div>
@@ -169,9 +169,8 @@ class IYMTeam extends Component {
                 <p className="Team-Name">Trisha Hernandez</p>
                 <p>
                   Communication Program Coordinator at Johns Hopkins University
-                  Advanced Academic Programs
                 </p>
-                <a href="https://www.linkedin.com/in/patricia-hernandez-phd-b421128/">
+                <a className="LinkedIn-Link"href="https://www.linkedin.com/in/patricia-hernandez-phd-b421128/">
                   Linkedin
                 </a>
                 <br></br>
@@ -182,7 +181,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Anush Ram Reddy K.</p>
                 <p>CS Student at UW-Madison</p>
-                <a href="insert Linkedin">Linkedin</a>
+                <a className="LinkedIn-Link"href="insert Linkedin">Linkedin</a>
                 <br></br>
               </p>
             </div>

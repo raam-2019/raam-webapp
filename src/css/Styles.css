@@ -590,8 +590,7 @@ a:focus {
   color: rgba(236, 18, 18, 0.623);
 }
 
-.Team .Team-Picture-Doug {
-  height: 150px;
-  width: 170px;
-  border-radius: 50%;
+.Team .LinkedIn-Link {
+  color: #383d3a;
+  text-decoration: underline;
 }

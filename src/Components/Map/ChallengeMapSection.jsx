@@ -9,6 +9,7 @@ class ChallengeMapSection extends Component {
         <div className="col Live-Event-Map-Box">
           <div className="Garmin-Map">
             <iframe
+              title="FraissardGarminMap"
               src="https://www.followmychallenge.com/live/rar21/#"
               frameborder="0"
               marginwidth="0"

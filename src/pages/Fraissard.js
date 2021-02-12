@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import ChallengeMapSection from "../HomeComponents/Map/ChallengeMapSection";
-import FraissardSocial from "../HomeComponents/Social/FraissardSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import ChallengeMapSection from "../Components/Map/ChallengeMapSection";
+import FraissardSocial from "../Components/Social/FraissardSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import fraissard from "../images/AtheletePages/fraissard.png";
-import FraissardBio from "../HomeComponents/Bio/FraissardBio";
+import FraissardBio from "../Components/Bio/FraissardBio";
 
 class Fraissard extends Component {
   render() {

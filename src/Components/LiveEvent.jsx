@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 import "../css/Styles.css";
 
-import MapBox from "../HomeComponents/Map/MapBox";
+import MapBox from "./Map/MapBox";
+import CuratorFeed from "./CuratorFeed";
 
 class LiveEvent extends Component {
   render() {
@@ -15,6 +16,8 @@ class LiveEvent extends Component {
             mapStyle="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
             latitude={21}
             longitude={79}
+            markLat={this.props.athleteLat}
+            markLong={this.props.athleteLong}
             zoom={4.2}
           />
 
@@ -31,7 +34,9 @@ class LiveEvent extends Component {
           </div> */}
           {/* ^ REMOVE GARMIN MAP WHEN RWANDA IS FINISHED ^ */}
         </div>
-        <div className="col Live-Event-Feed-Box">Live Feed</div>
+        <div className="col Live-Event-Feed-Box">
+          <CuratorFeed feedID={this.props.feedID} />
+        </div>
       </div>
     );
   }

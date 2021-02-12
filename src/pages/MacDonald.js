@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import "../css/Styles.css";
-import MapSection from "../HomeComponents/Map/MapBoxSection";
-import MacDonaldSocial from "../HomeComponents/Social/MacDonaldSocial";
-import Footer from "../HomeComponents/Footer";
-import AthleteInfo from "../HomeComponents/AthleteInfo";
+import MapSection from "../Components/Map/MapBoxSection";
+import MacDonaldSocial from "../Components/Social/MacDonaldSocial";
+import Footer from "../Components/Footer";
+import AthleteInfo from "../Components/AthleteInfo";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import macdonald from "../images/AtheletePages/macdonald.png";
-import MacDonaldBio from "../HomeComponents/Bio/MacDonaldBio";
+import MacDonaldBio from "../Components/Bio/MacDonaldBio";
 
 class MacDonald extends Component {
   render() {

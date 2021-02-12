@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Container } from "reactstrap";
 // import React from 'react'
+
 import ReactMapGL, {
   Marker,
-  Popup,
+  // Popup,
   NavigationControl,
-  LinearInterpolator,
+  // LinearInterpolator,
   FlyToInterpolator,
 } from "react-map-gl";
 import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
@@ -16,12 +17,12 @@ mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 // import Pin from './Pin'
 // 3rd-party easing functions
 // import d3 from 'd3-ease';//Mapbox token
-const TOKEN =
-  "pk.eyJ1IjoibWlzbGFtNSIsImEiOiJjanVpdG5vZWoxZThsNGZwamJ4Nmxya2o0In0.19pBli659L76GrJaX0JWoA";
-const STYLE = "mapbox://styles/mislam5/cjuiyejbm6qn11gnv0e44i7qm";
-const INDIA_TOKEN =
-  "pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA";
-const INDIA_STYLE = "mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n";
+// const TOKEN =
+//   "pk.eyJ1IjoibWlzbGFtNSIsImEiOiJjanVpdG5vZWoxZThsNGZwamJ4Nmxya2o0In0.19pBli659L76GrJaX0JWoA";
+// const STYLE = "mapbox://styles/mislam5/cjuiyejbm6qn11gnv0e44i7qm";
+// const INDIA_TOKEN =
+//   "pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA";
+// const INDIA_STYLE = "mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n";
 //Mapbox Navigation Style
 class Fanexperience extends Component {
   state = {
@@ -63,6 +64,15 @@ class Fanexperience extends Component {
             {...this.state.viewport}
             onViewportChange={this._onViewportChange}
           >
+            <Marker
+              latitude={this.props.markLat}
+              longitude={this.props.markLong}
+            >
+              <img
+                src=" https://img.icons8.com/color/48/000000/marker.png"
+                alt=""
+              />
+            </Marker>
             <div className="nav">
               <NavigationControl
                 onViewportChange={(viewport) => this.setState({ viewport })}

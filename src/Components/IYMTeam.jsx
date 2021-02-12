@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../css/Styles.css";
-import WHO from "../images/Logos/who.png";
 import DB from "../images/Team Pics/DougBarton.jpg";
 import BL from "../images/Team Pics/Benjamin L.jpg";
 import DR from "../images/Team Pics/Douglas R.jpg";

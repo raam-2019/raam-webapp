@@ -1,19 +1,27 @@
 import React, { Component } from "react";
 import "../../css/Styles.css";
 
-class SamarthSocial extends Component {
+class MacDonaldSocial extends Component {
   render() {
     return (
       <div className="row Social-Button-Box">
         <div className="col-sm-12">
           <h2 className="Social-Button-Header">
-            Find Dr. Amit on these platforms
+            Find James on these platforms
           </h2>
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-asia Social-Button"
-            href="https://rideacrossindia.com/"
+            className="fas fa-globe-europe Social-Button"
+            href="https://www.projectkansas.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+          </a>
+          <a
+            className="fab fa-twitter-square Social-Button"
+            href="https://twitter.com/jammacdo"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,7 +29,7 @@ class SamarthSocial extends Component {
           </a>
           <a
             className="fab fa-instagram-square Social-Button"
-            href="https://www.instagram.com/teamamitsamarth/"
+            href="https://www.instagram.com/jammacdo/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,4 +41,4 @@ class SamarthSocial extends Component {
   }
 }
 
-export default SamarthSocial;
+export default MacDonaldSocial;

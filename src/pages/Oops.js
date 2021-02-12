@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar/NavBar";
-import PageHeader from "../HomeComponents/Header";
+import NavBar from "../Components/NavBar/NavBar";
+import PageHeader from "../Components/Header";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";
 
 import "../css/Styles.css";
-import Footer from "../HomeComponents/Footer";
+import Footer from "../Components/Footer";
 
 class Rwanda extends Component {
   render() {

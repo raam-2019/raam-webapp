@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 450px;
+    top: 700px;
     left: 0;
 
     .Video-Header-Content-Text {
@@ -35,6 +35,87 @@
       text-align: center;
       cursor: pointer;
       opacity: 0.7;
+    }
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .Video-Header {
+    .Video-Header-Content {
+      top: 550px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .Video-Header {
+    .Video-Header-Content {
+      top: 450px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Video-Header {
+    position: relative !important;
+    z-index: 0 !important;
+    .Video-Header-Content {
+      top: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .Nav-Bar {
+    margin-bottom: 0px;
+  }
+
+  .Video-Header {
+    .Video-Header-Content {
+      top: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Video-Header {
+    .Video-Header-Content {
+      top: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Video-Header {
+    .Video-Header-Content {
+      .Video-Header-Content-Text {
+        font-size: 24px;
+      }
+      .Pledge-Button {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .Video-Header {
+    .Video-Header-Content {
+      top: 150px;
+      .Video-Header-Content-Text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Video-Header {
+    .Video-Header-Content {
+      top: 100px;
+      .Video-Header-Content-Text {
+        font-size: 16px;
+      }
     }
   }
 }

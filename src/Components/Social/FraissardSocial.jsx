@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import "../../css/Styles.css";
 
-class HeringSocial extends Component {
+class FraissardSocial extends Component {
   render() {
     return (
       <div className="row Social-Button-Box">
         <div className="col-sm-12">
           <h2 className="Social-Button-Header">
-            Find Jackie on these platforms
+            Find Sandrine on these platforms
           </h2>
         </div>
         <div className="col-sm-12">
           <a
-            class="fas fa-globe-americas Social-Button"
-            href="https://www.jackiehering.com/index.html"
+            className="fas fa-globe-europe Social-Button"
+            href="https://racearoundrwanda.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,7 +21,7 @@ class HeringSocial extends Component {
           </a>
           <a
             className="fab fa-instagram-square Social-Button"
-            href="https://www.instagram.com/jackiemhering/"
+            href="https://www.instagram.com/100drine_38/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,4 +33,4 @@ class HeringSocial extends Component {
   }
 }
 
-export default HeringSocial;
+export default FraissardSocial;

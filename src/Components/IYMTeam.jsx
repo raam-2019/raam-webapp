@@ -132,7 +132,7 @@ class IYMTeam extends Component {
               <p className="Team-Content">
                 <p className="Team-Name">Ivan Hu</p>
                 <p>Computer Science at UW-Madison</p>
-                <a className="LinkedIn-Link"href="insert Linkedin">Linkedin</a>
+                <a className="LinkedIn-Link" href="https://www.linkedin.com/in/ivan-hu-3a8688205/">Linkedin</a>
                 <br></br>
               </p>
             </div>

@@ -447,6 +447,9 @@ a:hover, a:active, a:focus {
   margin-top: 40px;
   margin-bottom: -40px;
 }
+.Info h2 {
+  font-size: 30px;
+}
 .Info .Info-Subheading {
   display: block;
   font-size: 14px;
@@ -478,7 +481,21 @@ a:hover, a:active, a:focus {
 .Learn-More {
   text-align: center;
   padding: 20px 80px;
-  padding-top: 100px;
+  padding-top: 80px;
+}
+.Learn-More .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Learn-More .col-sm-4 {
+  min-width: 350px;
+  max-width: 450px;
+  flex-shrink: 2;
+  flex-grow: 2;
+}
+.Learn-More .Learn-More-Header {
+  padding-bottom: 20px;
 }
 .Learn-More .Learn-More-Content {
   font-size: 16px;
@@ -496,6 +513,12 @@ a:hover, a:active, a:focus {
   width: 120px;
 }
 
+@media only screen and (max-width: 900px) {
+  .Learn-More {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .About-Content {
   text-align: left;
   padding: 0 80px;

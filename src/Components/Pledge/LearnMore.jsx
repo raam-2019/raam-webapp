@@ -10,6 +10,7 @@ class LearnMore extends Component {
   render() {
     return (
       <div className="Learn-More">
+        <h2 className="Learn-More-Header">Resources</h2>
         <div className="row">
           <div className="col-sm-4">
             <img className="Learn-More-Logo" src={WHO} alt="WHO" />

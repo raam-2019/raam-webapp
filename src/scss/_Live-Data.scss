@@ -1,31 +1,87 @@
 .Live-Data {
-  max-width: 800px;
+  max-width: 520px;
   margin: auto;
   padding: 40px 80px;
+  padding-top: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
-  align-content: flex-center;
   color: #2d2d2c;
+  text-align: center;
 
   .Live-Data-Cell {
-    background: radial-gradient(#bebebe, #e6e3e3);
-    box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: radial-gradient(#e6e3e3, #cecece);
+    box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     overflow: hidden;
     padding: 10px;
     margin: 10px;
+    // font-size: 32px;
     transition: transform 400ms;
+    // transition-delay: 300ms;
+    font-weight: 600;
+    letter-spacing: 1px;
 
-    &:hover,
-    &:active,
-    &:focus {
+    .Item-1 {
+      order: 1;
+    }
+    .Item-2 {
+      order: 2;
+    }
+    .Item-3 {
+      order: 3;
+    }
+    .Item-4 {
+      order: 4;
+    }
+    .Item-5 {
+      order: 5;
+    }
+    .Item-6 {
+      order: 6;
+    }
+    .Item-7 {
+      order: 7;
+    }
+
+    .Live-Data-Cell-Name {
+      display: none;
+    }
+
+    .Live-Data-Cell-Description {
+      display: none;
+    }
+
+    &:hover {
       transform: scale(1.1);
-      //color: #da0001;
+      color: #da0001;
+      font-weight: 600;
+
+      .Live-Data-Cell-Name {
+        font-weight: 100;
+        display: inline;
+        letter-spacing: 0px;
+      }
+      .Live-Data-Cell-Description {
+        color: #2d2d2c;
+        font-weight: 100;
+        display: block;
+        font-size: 18px;
+        line-height: 1.25;
+        letter-spacing: 0px;
+      }
     }
   }
 }
 
 .liveData {
   color: #2d2d2c;
+}
+
+@media only screen and (max-width: 520px) {
+  .Live-Data {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

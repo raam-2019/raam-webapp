@@ -74,7 +74,7 @@ class AthleteLiveData extends Component {
             athleteLat={items[index].geometry.coordinates[1]}
             athleteLong={items[index].geometry.coordinates[0]}
           />
-          <h2>Live Data</h2>
+          <h2>Live Biometrics</h2>
           {items[index].properties.device.testing && !this.props.isHome ? (
             <div className="testingMsg" style={{ textAlign: "center" }}>
               This athlete's data is in the testing stage

@@ -610,6 +610,10 @@ a:hover, a:active, a:focus {
 .crt-feed-window .crt-feed .crt-list-post-image {
   display: none !important;
 }
+.crt-feed-window .crt-feed .crt-list-post {
+  font-size: 16px;
+  line-height: 1.4;
+}
 .crt-feed-window .crt-feed .crt-list-post .crt-post-header .crt-post-fullname {
   margin-top: -10px;
   margin-bottom: -10px;
@@ -619,6 +623,7 @@ a:hover, a:active, a:focus {
   display: none;
 }
 .crt-feed-window .crt-feed .crt-list-post .crt-post-footer .crt-post-date {
+  font-size: 18px;
   margin-left: -20px;
 }
 .crt-feed-window .crt-feed .crt-list-post .crt-post-footer .crt-post-share {
@@ -635,32 +640,84 @@ a:hover, a:active, a:focus {
 }
 
 .Live-Data {
-  max-width: 800px;
+  max-width: 520px;
   margin: auto;
   padding: 40px 80px;
+  padding-top: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
-  align-content: flex-center;
   color: #2d2d2c;
+  text-align: center;
 }
 .Live-Data .Live-Data-Cell {
-  background: radial-gradient(#bebebe, #e6e3e3);
-  box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: radial-gradient(#e6e3e3, #cecece);
+  box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   overflow: hidden;
   padding: 10px;
   margin: 10px;
   transition: transform 400ms;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-.Live-Data .Live-Data-Cell:hover, .Live-Data .Live-Data-Cell:active, .Live-Data .Live-Data-Cell:focus {
+.Live-Data .Live-Data-Cell .Item-1 {
+  order: 1;
+}
+.Live-Data .Live-Data-Cell .Item-2 {
+  order: 2;
+}
+.Live-Data .Live-Data-Cell .Item-3 {
+  order: 3;
+}
+.Live-Data .Live-Data-Cell .Item-4 {
+  order: 4;
+}
+.Live-Data .Live-Data-Cell .Item-5 {
+  order: 5;
+}
+.Live-Data .Live-Data-Cell .Item-6 {
+  order: 6;
+}
+.Live-Data .Live-Data-Cell .Item-7 {
+  order: 7;
+}
+.Live-Data .Live-Data-Cell .Live-Data-Cell-Name {
+  display: none;
+}
+.Live-Data .Live-Data-Cell .Live-Data-Cell-Description {
+  display: none;
+}
+.Live-Data .Live-Data-Cell:hover {
   transform: scale(1.1);
+  color: #da0001;
+  font-weight: 600;
+}
+.Live-Data .Live-Data-Cell:hover .Live-Data-Cell-Name {
+  font-weight: 100;
+  display: inline;
+  letter-spacing: 0px;
+}
+.Live-Data .Live-Data-Cell:hover .Live-Data-Cell-Description {
+  color: #2d2d2c;
+  font-weight: 100;
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: 0px;
 }
 
 .liveData {
   color: #2d2d2c;
 }
 
+@media only screen and (max-width: 520px) {
+  .Live-Data {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .Team-Header {
   margin-top: 50px;
 }

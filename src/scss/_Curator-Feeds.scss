@@ -8,6 +8,9 @@
     }
 
     .crt-list-post {
+      font-size: 16px;
+      line-height: 1.4;
+
       .crt-post-header {
         .crt-post-fullname {
           margin-top: -10px;
@@ -21,6 +24,7 @@
           display: none;
         }
         .crt-post-date {
+          font-size: 18px;
           margin-left: -20px;
         }
         .crt-post-share {

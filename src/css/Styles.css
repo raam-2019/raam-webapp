@@ -181,7 +181,7 @@ a:hover, a:active, a:focus {
   margin-top: 6px;
 }
 .Live-Event .Live-Event-Feed-Box {
-  background: radial-gradient(#da0001, #fde3e3);
+  background: radial-gradient(ellipse at top, #da0001, transparent), radial-gradient(ellipse at bottom, #2d2d2c, transparent);
   box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   overflow-y: scroll;
@@ -603,39 +603,45 @@ a:hover, a:active, a:focus {
     min-width: 350px !important;
   }
 }
-.crt-feed-window {
+.crt-widget {
   z-index: 0;
-  margin-top: 20px;
 }
-.crt-feed-window .crt-feed .crt-list-post-image {
-  display: none !important;
+.crt-widget .crt-feed .crt-post {
+  box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  border-width: 0px;
+  margin: 16px 0px;
 }
-.crt-feed-window .crt-feed .crt-list-post {
+.crt-widget .crt-feed .crt-post .crt-post-content {
   font-size: 16px;
   line-height: 1.4;
 }
-.crt-feed-window .crt-feed .crt-list-post .crt-post-header .crt-post-fullname {
-  margin-top: -10px;
-  margin-bottom: -10px;
-  font-size: 24px;
+.crt-widget .crt-feed .crt-post .crt-post-content .crt-post-header {
+  margin-top: -20px;
 }
-.crt-feed-window .crt-feed .crt-list-post .crt-post-footer .crt-post-username {
-  display: none;
+.crt-widget .crt-feed .crt-post .crt-post-content .crt-post-header .crt-post-fullname {
+  margin-top: -15px;
+  font-size: 20px;
 }
-.crt-feed-window .crt-feed .crt-list-post .crt-post-footer .crt-post-date {
-  font-size: 18px;
-  margin-left: -20px;
+.crt-widget .crt-feed .crt-post .crt-post-content .crt-post-text {
+  margin-bottom: -15px;
+  color: #2d2d2c;
 }
-.crt-feed-window .crt-feed .crt-list-post .crt-post-footer .crt-post-share {
-  margin-right: 10px;
-}
-.crt-feed-window .crt-feed .crt-list-post a {
+.crt-widget .crt-feed .crt-post .crt-post-content a {
   color: #da0001;
 }
-.crt-feed-window .crt-feed .crt-list-post a:hover, .crt-feed-window .crt-feed .crt-list-post a:active, .crt-feed-window .crt-feed .crt-list-post a:focus {
+.crt-widget .crt-feed .crt-post .crt-post-content a:hover, .crt-widget .crt-feed .crt-post .crt-post-content a:active, .crt-widget .crt-feed .crt-post .crt-post-content a:focus {
   color: #707070;
 }
-.crt-feed-window .crt-feed .crt-list-post-text-wrap {
+.crt-widget .crt-feed .crt-post .crt-post-footer .crt-post-username {
+  display: none;
+}
+.crt-widget .crt-feed .crt-post .crt-post-footer .crt-post-date {
+  font-size: 16px;
+  margin-left: -20px;
+}
+.crt-widget .crt-feed .crt-list-post-text-wrap {
   color: #2d2d2c;
 }
 

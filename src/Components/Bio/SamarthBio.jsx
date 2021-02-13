@@ -7,9 +7,15 @@ class SamarthBio extends Component {
     return (
       <div>
         <h2>Bio</h2>
-        <p>Favorite Phrase: "Be your own hero"</p>
-        <p>Adventure: Ride Across India</p>
-        <p>Country: India</p>
+        <p>
+          <strong>Favorite Phrase:</strong> "Be your own hero"
+        </p>
+        <p>
+          <strong>Adventure:</strong> Ride Across India
+        </p>
+        <p>
+          <strong>Country:</strong> India
+        </p>
       </div>
     );
   }

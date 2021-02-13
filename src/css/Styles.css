@@ -195,6 +195,10 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (max-width: 520px) {
+  .MapBoxSection-Header {
+    display: none;
+  }
+
   .Live-Event-Map-Box {
     display: none !important;
   }
@@ -385,6 +389,10 @@ a:hover, a:active, a:focus {
   opacity: 0.7;
 }
 
+.Pledge-Info {
+  margin-top: -70px;
+}
+
 @media only screen and (max-width: 1750px) {
   .Video-Header .Video-Header-Content {
     top: 550px;
@@ -395,7 +403,7 @@ a:hover, a:active, a:focus {
     top: 450px;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
   .Video-Header {
     position: relative !important;
     z-index: 0 !important;
@@ -405,6 +413,10 @@ a:hover, a:active, a:focus {
   }
 }
 @media only screen and (max-width: 1125px) {
+  .Pledge-Info {
+    margin-top: 0px;
+  }
+
   .Nav-Bar {
     margin-bottom: 0px;
   }
@@ -539,6 +551,7 @@ a:hover, a:active, a:focus {
 .Social-Button-Box {
   text-align: center;
   padding: 0 80px;
+  margin-bottom: 5px;
 }
 .Social-Button-Box .Social-Button-Header {
   font-size: 26px;
@@ -575,13 +588,14 @@ a:hover, a:active, a:focus {
 .Athlete-Info {
   padding: 40px 80px;
   padding-bottom: 40px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   margin-top: -20px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .Athlete-Info .Athlete-Info-Photo-Box {
   text-align: center;
@@ -591,25 +605,22 @@ a:hover, a:active, a:focus {
   box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   overflow: hidden;
-  width: 500px;
+  width: 400px;
 }
 .Athlete-Info .Athlete-Info-Bio-Box {
-  text-align: left;
+  text-align: center;
   min-width: 500px;
   margin-bottom: 20px;
   flex-shrink: 0;
   flex-grow: 0;
 }
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1090px) {
   .Athlete-Info {
     padding-bottom: 0px;
   }
   .Athlete-Info .Athlete-Info-Bio-Box {
     margin-top: 50px;
-  }
-  .Athlete-Info .Athlete-Info-Bio-Box {
-    text-align: center !important;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -742,9 +753,13 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (max-width: 520px) {
+  .Biometrics {
+    margin-top: -80px;
+  }
+
   .Live-Data {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .Team-Header {

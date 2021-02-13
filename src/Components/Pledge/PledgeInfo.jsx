@@ -7,6 +7,7 @@ class PledgeInfo extends Component {
   render() {
     return (
       <div className="Pledge-Info">
+        <h1>Make the Pledge</h1>
         <div className="Info">
           <h2 className="Info-Heading">Step 1</h2>
           <p className="Info-Content">

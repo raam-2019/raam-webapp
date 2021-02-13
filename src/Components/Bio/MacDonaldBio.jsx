@@ -8,16 +8,21 @@ class MacDonaldBio extends Component {
       <div>
         <h2>Bio</h2>
         <p>
-          Accomplishments: World record holder, Only Scottish Solo RAAM
-          finisher.
+          <strong>Accomplishments: </strong>
+          World record holder, Only Scottish Solo RAAM finisher.
         </p>
-        <p>Sport: Cycling</p>
-        <p>Country: Scotland</p>
-        <p>Profession: Technology</p>
+        <p>
+          <strong>Sport:</strong> Cycling
+        </p>
+        <p>
+          <strong>Country:</strong> Scotland
+        </p>
+        <p>
+          <strong>Profession:</strong> Technology
+        </p>
       </div>
     );
   }
-  s;
 }
 
 export default MacDonaldBio;

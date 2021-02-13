@@ -21,7 +21,7 @@ class LiveEvent extends Component {
             zoom={4.2}
           />
 
-          {/* V REMOVE GARMIN MAP WHEN RWANDA IS FINISHED V */}
+          {/* v REMOVE GARMIN MAP WHEN RWANDA IS FINISHED v */}
           {/* <div className="Garmin-Map">
             <iframe
               src="https://share.garmin.com/share/lespoulettesfrites"

@@ -7,10 +7,18 @@ class FraissardBio extends Component {
     return (
       <div>
         <h2>Bio</h2>
-        <p>Totem: The Fox</p>
-        <p>Adventure: Journey Around Rwanda</p>
-        <p>Country: France</p>
-        <p>Sport: Gravel Cycling</p>
+        <p>
+          <strong>Totem:</strong> The Fox
+        </p>
+        <p>
+          <strong>Adventure:</strong> Journey Around Rwanda
+        </p>
+        <p>
+          <strong>Country:</strong> France
+        </p>
+        <p>
+          <strong>Sport:</strong> Gravel Cycling
+        </p>
       </div>
     );
   }

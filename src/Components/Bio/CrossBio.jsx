@@ -7,10 +7,18 @@ class CrossBio extends Component {
     return (
       <div>
         <h2>Bio</h2>
-        <p>Accomplishments: 2020 Jr Iditarod 2nd Place</p>
-        <p>Adventure: Dogsledding</p>
-        <p>Country: Canada</p>
-        <p>Profession: Student</p>
+        <p>
+          <strong>Accomplishments:</strong> 2020 Jr Iditarod 2nd Place
+        </p>
+        <p>
+          <strong>Adventure:</strong> Dogsledding
+        </p>
+        <p>
+          <strong>Country:</strong> Canada
+        </p>
+        <p>
+          <strong>Profession:</strong> Student
+        </p>
       </div>
     );
   }

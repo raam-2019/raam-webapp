@@ -23,7 +23,8 @@ const DropButton = (props) => {
           Sandrine Fraissard
         </DropdownItem>
         <DropdownItem className="Dropdown-Item" href="/Samarth">
-          Dr. Amit Samarth
+          <strong>Dr. Amit Samarth</strong>
+          {/* BOLD THE ACTIVE ATHLETE */}
         </DropdownItem>
         <DropdownItem className="Dropdown-Item" href="/Haase">
           Dave Haase

@@ -7,6 +7,9 @@ import MapBoxSection from "./Map/MapBoxSection";
 const DEFAULT_FEED =
   "https://cdn.curator.io/published/9f9e3fe1-73a0-40c2-a822-81500b89790d.js";
 
+const SAMARTH_FEED =
+  "https://cdn.curator.io/published/909eb93e-5ca5-4143-b4dc-32073e604857.js";
+
 class AthleteLiveData extends Component {
   constructor(props) {
     super(props);
@@ -61,18 +64,71 @@ class AthleteLiveData extends Component {
     } else if (this.props.isHome) {
       return (
         <LiveEvent
-          athleteLat={items[index].geometry.coordinates[1]}
-          athleteLong={items[index].geometry.coordinates[0]}
+          athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}
+          athleteLong={items[index].geometry.coordinates[0] !== null ? items[index].geometry.coordinates[0] : undefined}
           feedID={this.props.feedID || DEFAULT_FEED}
         />
       );
-    } else {
+    } else if(this.props.isSamarth) {
+      return (
+        <div>
+          <LiveEvent
+          athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}
+          athleteLong={items[index].geometry.coordinates[0] !== null ? items[index].geometry.coordinates[0] : undefined}
+          feedID={SAMARTH_FEED}
+        />
+          {items[index].properties.device.testing && !this.props.isHome ? (
+            <div className="testingMsg" style={{ textAlign: "center" }}>
+              This athlete's data is in the testing stage
+            </div>
+          ) : (
+            <Biometrics
+              hr={
+                items[index].properties.sensors.hr !== undefined
+                  ? items[index].properties.sensors.hr
+                  : undefined
+              }
+              speed={
+                items[index].properties.speed !== undefined
+                  ? items[index].properties.speed
+                  : undefined
+              }
+              cadence={
+                items[index].properties.sensors.cadence !== undefined
+                  ? items[index].properties.sensors.cadence
+                  : undefined
+              }
+              power={
+                items[index].properties.sensors.power !== undefined
+                  ? items[index].properties.sensors.power
+                  : undefined
+              }
+              altitude={
+                items[index].properties.altitude !== undefined
+                  ? items[index].properties.altitude
+                  : undefined
+              }
+              temp={
+                items[index].properties.sensors.temp !== undefined
+                  ? items[index].properties.sensors.temp
+                  : undefined
+              }
+              mo2={
+                items[index].properties.sensors.mo2 !== undefined
+                  ? items[index].properties.sensors.mo2.mo2Saturation
+                  : undefined
+              }
+            />
+          )}
+        </div>
+      );
+    } else{
       return (
         <div>
           <MapBoxSection
             id={this.props.id}
-            athleteLat={items[index].geometry.coordinates[1]}
-            athleteLong={items[index].geometry.coordinates[0]}
+            athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}
+            athleteLong={items[index].geometry.coordinates[0] !== null ? items[index].geometry.coordinates[1] : undefined}
           />
           {items[index].properties.device.testing && !this.props.isHome ? (
             <div className="testingMsg" style={{ textAlign: "center" }}>

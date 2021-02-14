@@ -21,7 +21,7 @@ class Samarth extends Component {
         <NavBar />
         <PageHeader text="Dr. Amit Samarth" />
         <AthleteInfo name="Dr. Amit Samarth" img={samarth} bio={SamarthBio} />
-        <AthleteLiveData id="00001" isHome={false} />
+        <AthleteLiveData id="00001" isHome={false} isSamarth={true}/>
         <SamarthSocial />
         <Footer />
       </Parallax>

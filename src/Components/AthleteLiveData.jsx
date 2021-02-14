@@ -59,10 +59,12 @@ class AthleteLiveData extends Component {
     } else if (!isLoaded) {
       return <div className="loadingMsg">Loading...</div>;
     } else if (this.props.isHome) {
+      console.log("is home geo: " + items[index].geometry.coordinates[1]);
+      console.log("is home prop: " + items[index].properties)
       return (
         <LiveEvent
-          athleteLat={items[index].geometry.coordinates[1]}
-          athleteLong={items[index].geometry.coordinates[0]}
+          athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}
+          athleteLong={items[index].geometry.coordinates[0] !== null ? items[index].geometry.coordinates[0] : undefined}
           feedID={this.props.feedID || DEFAULT_FEED}
         />
       );
@@ -71,8 +73,8 @@ class AthleteLiveData extends Component {
         <div>
           <MapBoxSection
             id={this.props.id}
-            athleteLat={items[index].geometry.coordinates[1]}
-            athleteLong={items[index].geometry.coordinates[0]}
+            athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}
+            athleteLong={items[index].geometry.coordinates[0] !== null ? items[index].geometry.coordinates[1] : undefined}
           />
           {items[index].properties.device.testing && !this.props.isHome ? (
             <div className="testingMsg" style={{ textAlign: "center" }}>

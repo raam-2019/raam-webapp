@@ -64,15 +64,18 @@ class Fanexperience extends Component {
             {...this.state.viewport}
             onViewportChange={this._onViewportChange}
           >
-            {/* <Marker
+            {this.props.markLat !== undefined ? 
+            <Marker
               latitude={this.props.markLat !== undefined ? this.props.markLat : 43}
               longitude={this.props.markLong !== undefined ? this.props.markLong : -89}
             >
               <img
-                src=" https://img.icons8.com/color/48/000000/marker.png"
+                src="https://img.icons8.com/color/48/000000/marker.png"
                 alt=""
               />
-            </Marker> */}
+            </Marker>
+            : <div></div>}
+
             <div className="nav">
               <NavigationControl
                 onViewportChange={(viewport) => this.setState({ viewport })}

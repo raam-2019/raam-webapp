@@ -7,7 +7,6 @@ import CuratorFeed from "./CuratorFeed";
 
 class LiveEvent extends Component {
   render() {
-    console.log("live event: " + this.props.athleteLat);
     return (
       <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">

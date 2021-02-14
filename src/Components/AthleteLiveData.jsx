@@ -59,8 +59,6 @@ class AthleteLiveData extends Component {
     } else if (!isLoaded) {
       return <div className="loadingMsg">Loading...</div>;
     } else if (this.props.isHome) {
-      console.log("is home geo: " + items[index].geometry.coordinates[1]);
-      console.log("is home prop: " + items[index].properties)
       return (
         <LiveEvent
           athleteLat={items[index].geometry.coordinates[1] !== null ? items[index].geometry.coordinates[1] : undefined}

@@ -20,11 +20,10 @@ class CuratorFeed extends React.Component {
 
   render() {
     return (
-      <div id="curator-feed-default-feed-layout">
+      <div id={"curator-feed-" + (this.props.feedName || "default-feed") + "-layout"}>
         <a
           href="https://curator.io"
           target="_blank"
-          rel="noopener noreferrer"
           className="crt-logo crt-tag"
         >
           Powered by Curator.io

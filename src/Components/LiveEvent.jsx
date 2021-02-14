@@ -16,8 +16,8 @@ class LiveEvent extends Component {
             mapStyle="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
             latitude={21}
             longitude={79}
-            markLat={this.props.athleteLat}
-            markLong={this.props.athleteLong}
+            markLat={this.props.athleteLat !== undefined ? this.props.athleteLat : undefined}
+            markLong={this.props.athleteLong !== undefined ? this.props.athleteLong : undefined}
             zoom={4.2}
           />
 

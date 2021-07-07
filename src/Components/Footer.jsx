@@ -1,28 +1,11 @@
-import React, { Component } from 'react';
-import {
-    Container,
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
-import "../css/stylesheet.css";
+import React, { Component } from "react";
+
+import "../css/Styles.css";
 
 class Footer extends Component {
-    
-    render() { 
-        return (
-        <div id="footer">
-            Something goes here for copyright
-        </div>
-        )
-    }
+  render() {
+    return <footer className="Footer">&copy; It's Your Move - 2021</footer>;
+  }
 }
- 
+
 export default Footer;

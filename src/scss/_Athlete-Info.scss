@@ -1,0 +1,60 @@
+.Athlete-Info {
+  padding: 40px 80px;
+  padding-bottom: 40px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .Athlete-Info-Photo-Box {
+    text-align: center;
+
+    .Athlete-Info-Photo {
+      background: #ffffff;
+      box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      overflow: hidden;
+      width: 400px;
+    }
+  }
+
+  .Athlete-Info-Bio-Box {
+    text-align: center;
+    min-width: 500px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .Athlete-Info {
+    padding-bottom: 0px;
+
+    .Athlete-Info-Bio-Box {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Athlete-Info-Photo {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Athlete-Info {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .Athlete-Info-Bio-Box {
+      min-width: 350px !important;
+    }
+  }
+}

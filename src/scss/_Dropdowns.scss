@@ -1,0 +1,57 @@
+.Dropdown {
+  margin: 9px 0;
+
+  .Dropdown-Toggle {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #da0001, 50%, #f17e7e);
+    border: none;
+    height: fit-content;
+    max-width: 160px;
+    padding-bottom: 7px;
+    padding-top: 9px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: linear-gradient(315deg, #da0001, 50%, #f17e7e);
+      //scale(1, 2);
+      // background: linear-gradient(
+      //   315deg,
+      //   darken(#da0001, 5%),
+      //   50%,
+      //   darken(#f17e7e, 5%)
+      // );
+    }
+  }
+  .Dropdown-Menu {
+    text-align: left;
+    background-color: #ffffff;
+
+    transition: height 500ms ease-out;
+
+    .Dropdown-Item {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      padding: 5px 0px;
+      padding-right: 20px;
+      text-align: right;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: #da0001;
+        background-color: darken(#ffffff, 5%);
+      }
+    }
+  }
+}
+
+// For an attempt to align the drop menu to center when button does
+// @media only screen and (max-width: 956px) {
+// }

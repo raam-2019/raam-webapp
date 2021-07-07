@@ -1,31 +1,36 @@
-import React, { Component } from 'react';
-import { Route, Link, BrowserRouter, Switch } from 'react-router-dom';
-import DashboardPage from "./pages/DashboardPage";
-import FanPage from "./pages/FanPage";
-import FanDataPage from "./pages/FanDataPage";
-import ErrorPage from "./pages/ErrorPage";
-import { Provider } from "react-redux"; // Redux Provider
+import React, { Component } from "react";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
 import store from "./store";
-import "./css/stylesheet.css";
 
-// import 'mapbox-gl/dist/mapbox-gl.css';
+import "./css/stylesheet.css"; // import before pages or style gets funky
+import Home from "./pages/Home";
+import Pledge from "./pages/Pledge";
+import About from "./pages/About";
+import Samarth from "./pages/Samarth";
+import Fraissard from "./pages/Fraissard";
+import Oops from "./pages/Oops";
+import Haase from "./pages/Haase";
+import MacDonald from "./pages/MacDonald";
+import Cross from "./pages/Cross";
+import Hering from "./pages/Hering";
 
 class App extends Component {
   render() {
     return (
-      //Fan experience page. This is the first page that will load. For Dashboard access for now 
-      //we will have to add /dashboardRAAMforVIPaccess to out http
-
-      //Removing the extact will show both the fan page and dash page together
-      //which we might need later to avoid multiple same implementations.
-      //For development purpose I have added the exact.
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route path="/" component={FanPage} exact />
-            <Route path="/FanData" component={FanDataPage} exact />
-            <Route path="/dashboardRAAMforVIPaccess" component={DashboardPage} exact/>
-            <Route component={ErrorPage} />
+            <Route path="/" component={Home} exact />
+            <Route path="/Pledge" component={Pledge} exact />
+            <Route path="/About" component={About} exact />
+            <Route path="/Samarth" component={Samarth} exact />
+            <Route path="/Fraissard" component={Fraissard} exact />
+            <Route path="/Haase" component={Haase} exact />
+            <Route path="/MacDonald" component={MacDonald} exact />
+            <Route path="/Cross" component={Cross} exact />
+            <Route path="/Hering" component={Hering} exact />
+            <Route path="/Oops" component={Oops} exact />
           </Switch>
         </BrowserRouter>
       </Provider>

@@ -1,0 +1,63 @@
+.Team-Header {
+  margin-top: 50px;
+}
+
+.Team {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 80px;
+  text-align: center;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .col-sm-4 {
+    min-width: 340px;
+    max-width: 450px;
+    flex-shrink: 2;
+    flex-grow: 2;
+  }
+
+  .Team-Picture {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .Team-Content {
+    padding: 0px 10px;
+    padding-bottom: 20px;
+
+    .Team-Name {
+      color: #da0001;
+      font-weight: 400;
+    }
+
+    .Team-Description {
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-top: -8px;
+      margin-bottom: 0px;
+    }
+
+    a {
+      color: #383d3a;
+      text-decoration: underline;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #da0001;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Team {
+    padding: 40px 20px;
+  }
+}
